@@ -1,0 +1,8 @@
+#!/bin/bash
+
+hash=$(git rev-parse --short HEAD)
+docker run --device=/dev/ttyUSB0 -device=/dev/ttyACM0 ecy14mhfh/testserial:$hasg
+
+
+
+echo $hash
