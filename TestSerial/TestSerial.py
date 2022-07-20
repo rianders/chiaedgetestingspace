@@ -4,6 +4,8 @@ import serial
 import time
 
 # ports for seiral communication: 
+PORT_NAMES = []
+
 PORT_NAME = '/dev/ttyUSB0'
 # check which port is being used in pio device monitor V
 
