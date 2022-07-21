@@ -19,5 +19,5 @@ COPY . .
 
 
 #CMD ["python","./pihattest.ipynb"]
-#CMD ["jupyter notebook","./pihattest.ipynb"]
+CMD ["jupyter notebook","./pihattest.ipynb"]
 CMD ["./pi_run.sh"]

@@ -1,3 +1,3 @@
 
 echo "run the pihattest script"
-python pihattest.ipynb
+python3 pihattest.ipynb
