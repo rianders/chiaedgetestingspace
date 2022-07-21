@@ -5,6 +5,8 @@ hash=$(git rev-parse --short HEAD)
 
 echo $hash
 
+VAR=""
+
 ports=$(python3 -m serial.tools.list_ports)
 echo $ports
 if [[ "$ports" == *"no ports found" ]]; then
@@ -13,10 +15,11 @@ if [[ "$ports" == *"no ports found" ]]; then
 else
     for device in $ports
     do
-        echo $device
+        echo "--device=$device "
+        VAR+="--device=$device"
     done
 fi
-
+echo  "$VAR"
 
 #if ports devices = a string of properly formatted devices
 
