@@ -21,7 +21,9 @@ else
 fi
 echo  "$VAR"
 
+docker run $VAR ecy14mhfh/testserial:$hash
+
 #if ports devices = a string of properly formatted devices
 
 
-#docker run --device=/dev/ttyACM0 --device=/dev/ttyACM1 --device=/dev/ttyUSB0 --device=/dev/ttyUSB1 ecy14mhfh/testserial:$hasg
+#docker run --device=/dev/ttyACM0 --device=/dev/ttyACM1 --device=/dev/ttyUSB0 --device=/dev/ttyUSB1 ecy14mhfh/testserial:$hash
