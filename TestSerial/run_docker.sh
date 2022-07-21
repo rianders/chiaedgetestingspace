@@ -16,7 +16,7 @@ else
     for device in $ports
     do
         echo "--device=$device "
-        VAR+="--device=$device"
+        VAR+="--device=$device "
     done
 fi
 echo  "$VAR"
