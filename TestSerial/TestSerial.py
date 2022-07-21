@@ -1,12 +1,14 @@
 # Read a line of serial data from a serial port and print it to the screen
-
 import serial
+import serial.tools.list_ports
 import time
 
-# ports for seiral communication: 
-PORT_NAMES = ['ttyACM0','ttyACM1','ttyUSB0','ttyUSB1']
+# Get the available serial port
+ports = [p.device  for p in serial.tools.list_ports.comports()]
 
-PORT_NAME = '/dev/ttyUSB0'
+# ports for seiral communication: 
+PORT_NAMES = ports
+#PORT_NAME = '/dev/ttyUSB0'
 # check which port is being used in pio device monitor V
 
 for pName in PORT_NAMES:
