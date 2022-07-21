@@ -5,7 +5,7 @@ hash=$(git rev-parse --short HEAD)
 
 echo $hash
 
-VAR=""
+DEVICES=""
 
 ports=$(python3 -m serial.tools.list_ports)
 echo $ports
@@ -16,12 +16,12 @@ else
     for device in $ports
     do
         echo "--device=$device "
-        VAR+="--device=$device "
+        DEVICES+="--device=$device "
     done
 fi
-echo  "$VAR"
+echo  "$DEVICES"
 
-docker run $VAR ecy14mhfh/testserial:$hash
+docker run $DEVICES ecy14mhfh/testserial:$hash
 
 #if ports devices = a string of properly formatted devices
 
