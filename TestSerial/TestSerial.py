@@ -16,7 +16,7 @@ for pName in PORT_NAMES:
     with  serial.Serial( pName,  9600, timeout=1) as ser:
         print(f"Start Serial: name: {ser.name}.  ")
         time.sleep(1)
-        for i in range(50):
+        for i in range(5):
             print(f"line: {i}")
             #if(ser.in_waiting > 0):
             line = ser.readline()
