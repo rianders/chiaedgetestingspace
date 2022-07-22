@@ -1,7 +1,7 @@
 #%pip install RPI.GPIO
 
 import RPi.GPIO as GPIO
-from .defines import *
+#from .defines import *
 from time import sleep
 
 LED_names={ 
@@ -31,7 +31,7 @@ LED_OFF=GPIO.LOW
 
 
 def callback_switch_thr_step(channel):
-    print(f"thr_step: {GPIO.input(switch_names['thr_step'])}")
+    print(f"thr_step: {GPIO.input(switch_names['thr_step'])}")9bba204
     for i in range(5):
         GPIO.output(LED_names["boot_RPi"], LED_ON)
         sleep(.2)
