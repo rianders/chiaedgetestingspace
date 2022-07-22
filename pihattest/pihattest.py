@@ -31,7 +31,7 @@ LED_OFF=GPIO.LOW
 
 
 def callback_switch_thr_step(channel):
-    print(f"thr_step: {GPIO.input(switch_names['thr_step'])}")9bba204
+    print(f"thr_step: {GPIO.input(switch_names['thr_step'])}")
     for i in range(5):
         GPIO.output(LED_names["boot_RPi"], LED_ON)
         sleep(.2)
