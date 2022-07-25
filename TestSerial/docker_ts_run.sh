@@ -1,9 +1,9 @@
 #!/bin/bash
 
 
-hash=$(git rev-parse --short HEAD)
+hash_ts=$(git rev-parse --short HEAD)
 
-echo $hash
+echo $hash_ts
 
 DEVICES=""
 
@@ -21,7 +21,7 @@ else
 fi
 echo  "$DEVICES"
 
-docker run $DEVICES ecy14mhfh/testserial:$hash
+docker run $DEVICES ecy14mhfh/testserial:$hash_ts
 
 #if ports devices = a string of properly formatted devices
 

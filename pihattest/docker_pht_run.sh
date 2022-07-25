@@ -1,7 +1,7 @@
 #!/bin/bash
 
-hash=$(git rev-parse --short HEAD)
+hash_pht=$(git rev-parse --short HEAD)
 
-echo $hash
+echo $hash_pht
 
-docker run ecy14mhfh/pihattest:$hash
+docker run ecy14mhfh/pihattest:$hash_pht
