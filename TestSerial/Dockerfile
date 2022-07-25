@@ -16,5 +16,5 @@ RUN echo "Running TestSeiral.py"
 
 #CMD ["python", "-u", "TestSerial.py"]
 #CMD ["/bin/bash"]
-CMD ["./run.sh"]
+CMD ["./python_ts_run.sh"]
 #CMD ["./run_docker.sh"]

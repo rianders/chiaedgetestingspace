@@ -20,4 +20,4 @@ COPY . .
 
 #CMD ["python","./pihattest.ipynb"]
 #CMD ["jupyter notebook","./pihattest.ipynb"]
-CMD ["./pi_run.sh"]
+CMD ["./python_pht_run.sh"]
