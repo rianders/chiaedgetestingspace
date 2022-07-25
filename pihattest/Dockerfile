@@ -4,7 +4,7 @@
 FROM  arm64v8/python:3.10 As base
 
 
-#RUN pip install pandas numpy matplotlib plotly RPi.GPIO
+RUN pip install pandas numpy matplotlib plotly RPi.GPIO
 
     # RUN conda install --quiet --yes \
     #     'matplotlib-base' \
@@ -13,7 +13,7 @@ FROM  arm64v8/python:3.10 As base
     #     'plotly'&& \
     #     conda clean --all -f -y
 
-RUN pip install matplotlib pandas numpy plotly
+#RUN pip install matplotlib pandas numpy plotly
 
 #ADD pihattest.py .
 
