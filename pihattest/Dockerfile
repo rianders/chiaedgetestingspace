@@ -1,23 +1,23 @@
 #FROM python:3.10
 #FROM jupyter/base-notebook
-FROM jupyter/base-notebook
-#FROM  arm64v8/python:3.10 As base
+#FROM jupyter/base-notebook
+FROM  arm64v8/python:3.10 As base
 
 
-#RUN pip install pandas numpy matplotlib plotly RPi.GPIO
+RUN pip install pandas numpy matplotlib plotly RPi.GPIO
 
-    RUN conda install --quiet --yes \
-        'matplotlib-base' \
-        'pandas'\
-        'numpy'\
-        'plotly'&& \
-        conda clean --all -f -y
+    # RUN conda install --quiet --yes \
+    #     'matplotlib-base' \
+    #     'pandas'\
+    #     'numpy'\
+    #     'plotly'&& \
+    #     conda clean --all -f -y
 
 #RUN pip install matplotlib pandas numpy plotly
 
 ADD pihattest.py .
 
-ADD pihattest.ipynb .
+#ADD pihattest.ipynb .
 
 COPY . .
 
