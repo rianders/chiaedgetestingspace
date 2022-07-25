@@ -15,7 +15,9 @@ FROM  arm64v8/python:3.10 As base
 
 RUN pip install matplotlib pandas numpy plotly
 
-ADD pihattest.py .
+#ADD pihattest.py .
+
+ADD pihattest.ipynb .
 
 COPY . .
 
