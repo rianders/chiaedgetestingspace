@@ -30,9 +30,9 @@ jobs:
       run: |
         docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
 
-    - name: Build and push the testserial image
-      run: 
-        docker build ./TestSerial --platform linux/arm64 -t ecy14mhfh/testserial:$(date +%s)
+    # - name: Build and push the testserial image
+    #   run: 
+    #     docker build ./TestSerial --platform linux/arm64 -t ecy14mhfh/testserial:$(date +%s)
 
     - name: Build and push testserial
       uses: docker/build-push-action@v3
