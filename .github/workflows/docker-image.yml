@@ -35,9 +35,9 @@ jobs:
       with:
         context: .
         platforms: linux/amd64,linux/arm64
-        #file: ./TestSerial
+        file: ./TestSerial
         push: true
-        tags: ecy14mhfh/app:latest
+        tags: latest
     
     # - name: Build and push the pihattest image
     #   run: 
