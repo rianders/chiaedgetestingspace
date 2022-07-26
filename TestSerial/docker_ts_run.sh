@@ -8,7 +8,7 @@ echo $hash_ts
 DEVICES=""
 
 ports=$(python3 -m serial.tools.list_ports)
-echo $ports
+echo "Port Results: $ports"
 if [[ "$ports" == *"no ports found" ]]; then
   devices = ""
   echo "No devices: $devices"
