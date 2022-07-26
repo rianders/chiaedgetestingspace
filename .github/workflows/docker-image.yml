@@ -24,5 +24,13 @@ jobs:
 
     - name: Build and push the testserial image
       run: 
-        docker build ./TestSerial --platform linux/arm64 -t ecy14mhfh/testserial:$(date +%s)
+        hash_ts=$(git rev-parse --short HEAD)
+        docker ./TestSerial build --platform linux/arm64 -t ecy14mhfh/testserial:$hash_ts -f Dockerfile .
+        docker push ecy14mhfh/testserial:$hash_ts
+        echo $hash_ts
+        #docker build ./TestSerial --platform linux/arm64 -t ecy14mhfh/testserial:$(date +%s)
+
+    - name: Build and push the pihattest image
+      run: 
+        docker build ./pihattest --platform linux/arm64 -t ecy14mhfh/pihattest:$(date +%s)
 
