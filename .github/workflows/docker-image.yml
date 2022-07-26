@@ -33,7 +33,7 @@ jobs:
     - name: Build and push testserial
       uses: docker/build-push-action@v3
       with:
-        context: ./chiaedgetestingspace/testerial
+        context: ./chiaedgetestingspace/testserial
         platforms: linux/amd64,linux/arm64
         #file: chiaedgetestingspace/TestSerial/Dockerfile
         push: true
