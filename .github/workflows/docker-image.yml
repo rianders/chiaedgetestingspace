@@ -14,7 +14,15 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: Build the testserial image
+
+    - name: Docker login
+      env:
+        DOCKER_USER: ${{ secrets.DOCKER_USERNAME }}
+        DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+      run: |
+        docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
+
+    - name: Build and push the testserial image
       run: 
-        # Can I run bash commands here?
-        bash ts_builddocker.sh
+        docker build ./TestSerial --platform linux/arm64 -t ecy14mhfh/testserial:$(date +%s)
+
