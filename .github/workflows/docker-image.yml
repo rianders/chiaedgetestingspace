@@ -34,7 +34,7 @@ jobs:
       run: 
         docker build ./TestSerial --platform linux/arm64 -t ecy14mhfh/testserial:$(date +%s)
 
-    - name: Build and push
+    - name: Build and push testserial
       uses: docker/build-push-action@v3
       with:
         context: .
