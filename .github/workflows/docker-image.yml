@@ -27,12 +27,8 @@ jobs:
       with:
         DOCKER_USER: ${{ secrets.DOCKER_USERNAME }}
         DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
-      run: |
-        docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
-
-    # - name: Build and push the testserial image
-    #   run: 
-    #     docker build ./TestSerial --platform linux/arm64 -t ecy14mhfh/testserial:$(date +%s)
+      # run: |
+      #   docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
 
     - name: Build and push testserial
       uses: docker/build-push-action@v3
