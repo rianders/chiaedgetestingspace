@@ -39,14 +39,14 @@ jobs:
         push: true
         tags: user/app:latest
 
-    # - name: Build and push pihattest
-    #   uses: docker/build-push-action@v3
-    #   with:
-    #     context: ./chiaedgetestingspace/pihattest
-    #     platforms: linux/amd64,linux/arm64
-    #     #file: ./TestSerial
-    #     push: true
-    #     tags: user/app:latest
+    - name: Build and push pihattest
+      uses: docker/build-push-action@v3
+      with:
+        context: pihattest/
+        platforms: linux/amd64,linux/arm64
+        file: pihattest/Dockerfile
+        push: true
+        tags: user/app:latest
     
     # - name: Build and push the pihattest image
     #   run: 
