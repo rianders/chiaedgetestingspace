@@ -5,7 +5,8 @@
 FROM  python:3.10 As base
 
 
-RUN pip install pandas numpy matplotlib plotly RPi.GPIO
+RUN pip install pandas numpy matplotlib plotly RPi.GPIO strace
+
 
     # RUN conda install --quiet --yes \
     #     'matplotlib-base' \
