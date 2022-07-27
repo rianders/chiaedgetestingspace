@@ -1,7 +1,8 @@
 #FROM python:3.10
 #FROM jupyter/base-notebook
 #FROM jupyter/base-notebook
-FROM  arm64v8/python:3.10 As base
+#FROM  arm64v8/python:3.10 As base
+FROM  python:3.10 As base
 
 
 RUN pip install pandas numpy matplotlib plotly RPi.GPIO
