@@ -4,8 +4,11 @@
 #FROM  arm64v8/python:3.10 As base
 FROM  python:3.10 As base
 
+RUN apt-get update
 
-RUN pip install pandas numpy matplotlib plotly RPi.GPIO strace
+RUN apt install strace
+
+RUN pip install pandas numpy matplotlib plotly RPi.GPIO 
 
 
     # RUN conda install --quiet --yes \
