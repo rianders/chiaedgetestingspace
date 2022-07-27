@@ -37,7 +37,7 @@ jobs:
         platforms: linux/amd64,linux/arm64
         file: TestSerial/Dockerfile
         push: true
-        tags: ecy14mhfh/testserial:$(date +%s)
+        tags: ecy14mhfh/testserial:${date +%s}
 
     - name: Build and push pihattest
       uses: docker/build-push-action@v3
