@@ -4,9 +4,12 @@
 #FROM  arm64v8/python:3.10 As base
 FROM  python:3.10 As base
 
-RUN apt-get update
+# RUN apt-get update
 
-RUN apt install strace
+# RUN apt install strace
+
+RUN apt-get update && apt-get install -y \
+    strace 
 
 RUN pip install pandas numpy matplotlib plotly RPi.GPIO 
 
