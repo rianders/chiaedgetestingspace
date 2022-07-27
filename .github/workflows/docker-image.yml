@@ -29,6 +29,9 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}
       # run: |
       #   docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
+    - name: set env
+      with: 
+        name=NOW::$(date +'%Y-%m-%dT%H:%M:%S')"
 
     - name: Build and push testserial
       uses: docker/build-push-action@v3
@@ -37,7 +40,7 @@ jobs:
         platforms: linux/amd64,linux/arm64
         file: TestSerial/Dockerfile
         push: true
-        tags: ecy14mhfh/testserial:latest
+        tags: ecy14mhfh/testserial:${{ env.NOW }}
 
     - name: Build and push pihattest
       uses: docker/build-push-action@v3
