@@ -33,7 +33,7 @@ jobs:
     - name: Build and push testserial
       uses: docker/build-push-action@v3
       with:
-        context: HornOfSaltff/chiaedgetestingspace/tree/main/TestSerial
+        context: /GitHub/chiaedgetestingspace/tree/main/TestSerial
         platforms: linux/amd64,linux/arm64
         file: Dockerfile
         push: true
