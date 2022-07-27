@@ -31,7 +31,7 @@ jobs:
       #   docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
 
     - name: Build and push testserial
-      uses: docker/build-push-action@v2
+      uses: docker/build-push-action@v3
       with:
         context: TestSerial/
         platforms: linux/amd64,linux/arm64
@@ -46,7 +46,7 @@ jobs:
         platforms: linux/amd64,linux/arm64
         file: pihattest/Dockerfile
         push: true
-        tags: ecy14mhfh/pihattest:${date +%s}
+        tags: ecy14mhfh/pihattest:$(date +'%Y-%m-%d')
     
     # - name: Build and push the pihattest image
     #   run: 
