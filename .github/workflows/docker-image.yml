@@ -46,7 +46,7 @@ jobs:
         platforms: linux/amd64,linux/arm64
         file: pihattest/Dockerfile
         push: true
-        tags: user/app:latest
+        tags: ecy14mhfh/pihattest:${date +%s}
     
     # - name: Build and push the pihattest image
     #   run: 
