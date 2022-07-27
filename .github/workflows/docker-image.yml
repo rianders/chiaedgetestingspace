@@ -31,13 +31,13 @@ jobs:
       #   docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
 
     - name: Build and push testserial
-      uses: docker/build-push-action@v3
+      uses: docker/build-push-action@v2
       with:
         context: TestSerial/
         platforms: linux/amd64,linux/arm64
         file: TestSerial/Dockerfile
         push: true
-        tags: ${date +%s}
+        tags: ecy14mhfh/testserial:${date +%s}
 
     - name: Build and push pihattest
       uses: docker/build-push-action@v3
