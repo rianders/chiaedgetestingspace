@@ -1,26 +1,22 @@
-FROM jupyter/minimal-notebook:aarch64-latest AS base
-# Todo set up tensorflow for arm
-#FROM BASE as TENSORFLOW
-#get tensorflow set up for arm host platform (linux/arm64/v8)
+#FROM  arm64v8/python As base
+#FROM  arm64v8/python:3.10 As base
+FROM  jupyter/minimal-notebook:aarch64-latest As base
 
-FROM base AS serial
+ENV PYTHONUNBUFFERED=1
 
-#install serial support
+
+ 
 RUN pip install platformio
-RUN pip install pyserial
+RUN echo "pio check for serial ports"
 
-FROM serial AS gpio
-#todo
-RUN echo "serial stage"
-FROM gpio AS camera
-#todo
-RUN echo "GPIO Stage"
-FROM camera AS notebook
-RUN echo "Notebook stage"
-#todo: consider copying only what you need
+FROM pio as serial
+
+RUN pip install pyserial
+ADD TestSerial.py .
 COPY . .
-RUN echo "Running testseiral.ipynb"
+RUN echo "Running TestSeiral.py"
 
 #CMD ["python", "-u", "TestSerial.py"]
 #CMD ["/bin/bash"]
-#CMD ["./nbook_tsnb_run.sh"]
+CMD ["./python_ts_run.sh"]
+#CMD ["./run_docker.sh"]a

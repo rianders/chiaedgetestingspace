@@ -1,4 +1,4 @@
-FROM jupyter/scipy-notebook AS base
+FROM jupyter/minimal-notebook:aarch64-latest AS base
 # Todo set up tensorflow for arm
 #FROM BASE as TENSORFLOW
 #get tensorflow set up for arm host platform (linux/arm64/v8)
