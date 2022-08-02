@@ -6,11 +6,13 @@ FROM jupyter/minimal-notebook:aarch64-latest AS base
 FROM base AS serial
 
 #install serial support
-RUN pip install platformio
-RUN pip install pyserial
 
 FROM serial AS gpio
 #todo
+RUN apt-get update && apt-get install -y \
+    strace 
+
+RUN pip install pandas numpy matplotlib plotly RPi.GPIO 
 RUN echo "serial stage"
 FROM gpio AS camera
 #todo
@@ -19,9 +21,9 @@ FROM camera AS notebook
 RUN echo "Notebook stage"
 #todo: consider copying only what you need
 COPY . .
-RUN echo "Running testseiral.ipynb"
+RUN echo "Running pihattest.ipynb"
 
 #CMD ["python", "-u", "TestSerial.py"]
 #CMD ["/bin/bash"]
 #CMD ["./nbook_tsnb_run.sh"]
-CMD ["./nbook_tsnb_run.sh"]
+CMD ["./nbook_phtnb_run.sh"]

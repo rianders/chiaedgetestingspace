@@ -1,6 +1,6 @@
 #FROM  arm64v8/python As base
 #FROM  arm64v8/python:3.10 As base
-FROM  jupyter/minimal-notebook:aarch64-latest As base
+FROM  python:3.10 As base
 
 ENV PYTHONUNBUFFERED=1
 
