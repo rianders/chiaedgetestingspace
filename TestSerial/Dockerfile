@@ -13,7 +13,8 @@ FROM serial AS gpio
 #todo
 #RUN apt-get update && apt-get install -y \strace 
 
-RUN pip install pandas numpy matplotlib plotly RPi.GPIO 
+RUN pip install pandas numpy matplotlib plotly RPi.GPIO pyserial
+#RUN pip3 install pyserial
 RUN echo "serial stage"
 FROM gpio AS camera
 #todo
