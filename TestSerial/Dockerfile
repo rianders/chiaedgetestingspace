@@ -21,9 +21,9 @@ FROM camera AS notebook
 RUN echo "Notebook stage"
 #todo: consider copying only what you need
 COPY . .
-RUN echo "Running pihattest.ipynb"
+RUN echo "./python_ts_run.sh"
 
 #CMD ["python", "-u", "TestSerial.py"]
 #CMD ["/bin/bash"]
 #CMD ["./nbook_tsnb_run.sh"]
-CMD ["./nbook_phtnb_run.sh"] 
+CMD ["./python_ts_run.sh"] 
