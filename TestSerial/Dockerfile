@@ -7,9 +7,6 @@ FROM  arm64v8/python:3.10 As base
 
 FROM base AS serial
 
-#install serial support
-
-FROM serial AS gpio
 #todo
 RUN apt-get update && apt-get install -y \
     python3
@@ -26,13 +23,6 @@ RUN echo "installing pio"
 RUN pip3 install pio
 RUN echo "installation done"
 
-#RUN pip3 install pyserial
-RUN echo "serial stage"
-FROM gpio AS camera
-#todo
-RUN echo "GPIO Stage"
-FROM camera AS notebook
-RUN echo "Notebook stage"
 #todo: consider copying only what you need
 COPY . .
 RUN echo "./python_ts_run.sh"
