@@ -11,7 +11,8 @@ FROM base AS serial
 
 FROM serial AS gpio
 #todo
-#RUN apt-get update && apt-get install -y \strace 
+RUN apt-get update && apt-get install -y \
+    python3
 
 RUN echo "installing pandas, numpy, matplotlib, plotly, RPi.GPIO, and pyserial"
 RUN pip install pandas numpy matplotlib plotly RPi.GPIO pyserial
