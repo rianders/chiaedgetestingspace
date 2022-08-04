@@ -18,9 +18,8 @@ RUN pip install pandas numpy matplotlib plotly RPi.GPIO pyserial
 RUN echo "installation done"
 
 RUN echo "installing requests"
-RUN apt-get install python3-requests
+RUN pip install requests
 RUN echo "installation done"
-
 
 RUN echo "installing pio"
 RUN pip3 install pio
