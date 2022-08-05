@@ -20,7 +20,10 @@ fi
 echo  "$DEVICES"
 
 echo "docker run $DEVICES -p 8888:8888 ecy14mhfh/testserialnb:$hash_tsnb"
-docker run $DEVICES -p 8888:8888 ecy14mhfh/testserialnb:$hash_tsnb
+#docker run $DEVICES -p 8888:8888 ecy14mhfh/testserialnb:$hash_tsnb
+docker run $DEVICES -it --rm -v $(realpath ~/notebooks) -p 8888:8888 ecy14mhfh/testserialnb:$hash_tsnb
+
+
 
 #if ports devices = a string of properly formatted devices
 

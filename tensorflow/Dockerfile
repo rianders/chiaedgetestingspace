@@ -1,4 +1,7 @@
-FROM jupyter/tensorflow-notebook:notebook-6.4.12
+FROM tensorflow/tensorflow:latest-jupyter
+
+RUN pip install tensorflow 
+
 
 COPY . .
 RUN echo "./nbook_tf_run.sh"
