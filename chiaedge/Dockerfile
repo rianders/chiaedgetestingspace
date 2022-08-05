@@ -1,5 +1,5 @@
 ARG OWNER=jupyter
-ARG BASE_CONTAINER=$OWNER/scipy-notebook
+ARG BASE_CONTAINER=$OWNER/scipy-notebook:aarch64-latest
 FROM $BASE_CONTAINER
 
 LABEL maintainer="Jupyter Project <jupyter@googlegroups.com>"
