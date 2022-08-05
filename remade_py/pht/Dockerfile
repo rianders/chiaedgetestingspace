@@ -9,8 +9,8 @@ FROM base AS serial
 
 FROM serial AS gpio
 #todo
-#RUN apt-get update && apt-get install -y 
-    #strace 
+#RUN apt-get update && apt-get install -y
+#     strace 
 
 RUN pip install pandas numpy matplotlib plotly RPi.GPIO 
 RUN echo "serial stage"
