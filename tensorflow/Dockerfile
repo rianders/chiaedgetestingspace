@@ -1,9 +1,16 @@
-FROM --platform=linux/arm64/v8 kumatea/tensorflow:latest AS base
+FROM --platform=linux/arm64/v8 python:3.7-buster AS python3
 
-# RUN apt-get update && apt-get install -y \
-#     zip\
-#     unzip
-#RUN pip3 install notebook
+# RUN apt-get install -y libhdf5-dev libc-ares-dev ;ibeigen3-dev
+# RUN pip3 install keras_applications==1.0.8 --no-deps
+# RUN python3 -m pip install keras_preprocessing==1.1.0 --no-deps
+# RUN python3 -m pip install h5py==2.9.0
+# RUN apt-get install -y openmpi-bin libopenmpi-dev
+# RUN apt-get install -y libatlas-base-dev
+# RUN python3 -m pip install -U six wheel mock
+# RUN wget -O tensorflow.zip https://github.com/tensorflow/tensorflow/archive/v2.8.0.zip
+
+
+
 RUN python3 -m pip install tensorflow
 
 COPY . .
