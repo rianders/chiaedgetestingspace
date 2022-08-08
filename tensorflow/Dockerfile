@@ -1,4 +1,4 @@
-FROM tensorflow/tensorflow:latest-jupyter AS base
+FROM --platform=linux/arm64/v8 tensorflow/tensorflow:latest-jupyter AS base
 
 # RUN apt-get update && apt-get install -y \
 #     zip\
