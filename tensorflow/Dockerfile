@@ -1,8 +1,10 @@
-FROM --platform=linux/arm64/v8 python:3.7-buster AS python3
+FROM jupyter/minimal-notebook:aarch64-latest AS base
 
 RUN apt-get update && apt-get install -y \
     zip\
     unzip
+
+RUN python3 -m pip install tensorflow
 
 COPY . .
 
