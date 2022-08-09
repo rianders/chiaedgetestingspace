@@ -35,7 +35,7 @@ RUN apt-get update && apt-get -y install --no-install-recommends \
 && rm -rf /var/lib/apt/lists/*
 COPY --from=build /*.whl /
 RUN pip3 install *.whl
-RUN wget https://storage.googleapis.com/tensorflow/raspberrypi/tensorflow-2.1.0-cp35-none-linux_armv7l.whl
+RUN wget https://github.com/KumaTea/tensorflow-aarch64/releases/download/v2.4/tensorflow-2.4.1-cp39-cp39-linux_aarch64.whl
 RUN pip3 install tensorflow-*.whl
 RUN rm *.whl
 # FROM jupyter/minimal-notebook:python-3.9.2 as notebook
