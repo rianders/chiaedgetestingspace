@@ -24,8 +24,8 @@ FROM serial AS gpio
 #todo
 RUN echo "GPIO stage"
 RUN echo "installing pandas, numpy, matplotlib, plotly, RPi.GPIO, pyserial , and python"
-RUN apt-get update && apt-get install -y \
-    python3
+# RUN apt-get update && apt-get install -y \
+#     python3
 
 RUN pip install pandas numpy matplotlib plotly RPi.GPIO pyserial
 RUN echo "installation done"
@@ -41,4 +41,4 @@ COPY . .
 #CMD ["python", "-u", "TestSerial.py"]
 #CMD ["/bin/bash"]
 #CMD ["./nbook_tsnb_run.sh"]
-CMD ["./nbook_phtnb_run.sh"]
+CMD ["./nbook_tf_run.sh"]
