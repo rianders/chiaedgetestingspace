@@ -1,4 +1,4 @@
-FROM  --platform=linux/arm64/v8 jupyter/minimal-notebook:python-3.9.5 AS base
+FROM  --platform=linux/arm64/v8 jupyter/minimal-notebook:aarch64-python-3.10.5 AS base
 #FROM --platform=linux/arm64/v8 jupyter/minimal-notebook:python-3.9.2 AS base
 # Todo set up tensorflow for arm
 #FROM BASE as TENSORFLOW
@@ -28,7 +28,8 @@ RUN echo "installing pandas, numpy, matplotlib, plotly, RPi.GPIO, pyserial , and
 # RUN apt-get update && apt-get install -y \
 #     python3
 
-RUN pip install pandas numpy matplotlib plotly RPi.GPIO pyserial
+RUN pip install RPi.GPIO 
+RUN pip install pandas numpy matplotlib plotly pyserial
 RUN echo "installation done"
 FROM gpio AS camera
 #todo

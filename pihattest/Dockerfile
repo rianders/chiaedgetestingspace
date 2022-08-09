@@ -8,8 +8,8 @@ FROM  python:3.10 As base
 
 # RUN apt install strace
 
-RUN apt-get update && apt-get install -y \
-    strace 
+# RUN apt-get update && apt-get install -y \
+#     strace 
 
 RUN pip install pandas numpy matplotlib plotly RPi.GPIO 
 
