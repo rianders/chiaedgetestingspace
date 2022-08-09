@@ -1,4 +1,4 @@
-FROM tensorflow/tensorflow:latest-jupyter AS base
+FROM jupyter/minimal-notebook:python-3.9.2 AS base
 # Todo set up tensorflow for arm
 #FROM BASE as TENSORFLOW
 #get tensorflow set up for arm host platform (linux/arm64/v8)
@@ -8,7 +8,7 @@ FROM base AS tensor
 
 RUN echo "tensorflow stage"
 RUN echo "install tensorflow"
-RUN pip install tensorflow 
+RUN pip install tensorflow-aarch64 -f https://tf.kmtea.eu/whl/stable.html
 RUN echo "install done"
 
 FROM tensor AS serial
