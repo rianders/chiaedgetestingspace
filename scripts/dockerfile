@@ -16,5 +16,4 @@ COPY . .
 
 RUN echo "Running testseiral.ipynb"
 
-#CMD ["./nbook_tsnb_run.sh"]
-CMD ["./nbook_tf_run.sh"]
+CMD ["./nbook_tsnb_run.sh"]
