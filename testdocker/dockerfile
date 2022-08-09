@@ -2,6 +2,10 @@ FROM  python:3.9.2 As base
 
 RUN pip install notebook
 
+RUN echo "install tensorflow"
+RUN pip install tensorflow-aarch64 -f https://tf.kmtea.eu/whl/stable.html
+RUN echo "install done"
+
 FROM base AS serial
 
 RUN echo "installing pandas, numpy, matplotlib, plotly, RPi.GPIO, pyserial , and python"
