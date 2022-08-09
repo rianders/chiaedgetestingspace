@@ -15,13 +15,13 @@ RUN echo "installing pandas, numpy, matplotlib, plotly, RPi.GPIO, and pyserial"
 RUN pip install pandas numpy matplotlib plotly RPi.GPIO pyserial
 RUN echo "installation done"
 
-RUN echo "installing requests"
-RUN pip install requests
-RUN echo "installation done"
+# RUN echo "installing requests"
+# RUN pip install requests
+# RUN echo "installation done"
 
-RUN echo "installing pio"
-RUN pip3 install pio
-RUN echo "installation done"
+# RUN echo "installing pio"
+# RUN pip3 install pio
+# RUN echo "installation done"
 
 #todo: consider copying only what you need
 COPY . .
