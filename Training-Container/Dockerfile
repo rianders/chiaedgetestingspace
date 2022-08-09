@@ -1,4 +1,4 @@
-FROM jupyter/minimal-notebook:python-3.9.2 AS base
+FROM --platform=linux/arm64/v8 jupyter/minimal-notebook:python-3.9.2 AS base
 # Todo set up tensorflow for arm
 #FROM BASE as TENSORFLOW
 #get tensorflow set up for arm host platform (linux/arm64/v8)
