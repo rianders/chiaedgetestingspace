@@ -6,9 +6,12 @@ FROM jupyter/minimal-notebook:aarch64-latest AS base
 FROM base AS serial
 
 #install serial support
-RUN pip install platformio
-RUN pip install pyserial
+RUN echo "installing pandas, numpy, matplotlib, plotly, RPi.GPIO, pyserial , and python"
+# RUN apt-get update && apt-get install -y \
+#     python3
 
+RUN pip install pandas numpy matplotlib plotly RPi.GPIO pyserial
+RUN echo "installation done"
 FROM serial AS gpio
 #todo
 RUN echo "serial stage"
