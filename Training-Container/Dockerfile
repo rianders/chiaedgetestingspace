@@ -15,7 +15,8 @@ FROM tensor AS serial
 
 RUN echo "serial stage"
 RUN echo "installing platformio and pyserial"
-RUN pip install platformio, pyserial
+RUN pip install pyserial
+RUN python get-platformio.py
 RUN echo "installation done"
 #install serial support
 
