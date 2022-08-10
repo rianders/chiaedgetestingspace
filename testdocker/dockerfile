@@ -1,7 +1,14 @@
 FROM  balenalib/raspberrypi400-64-ubuntu-python:3.9 As base
 
-#FROM  python:3.7 As base
+# FROM  python:3.7 As base
+RUN echo "upgrade pip"
+RUN pip install --upgrade pip
+RUN echo "upgrade done"
+
+RUN echo "installing notebook"
+#RUN python -m pip install psutil
 #RUN pip install notebook
+RUN echo "install done"
 
 RUN echo "install tensorflow"
 RUN pip install tensorflow-aarch64 -f https://tf.kmtea.eu/whl/stable.html
@@ -18,5 +25,6 @@ COPY . .
 RUN echo "Running testseiral.ipynb"
 
 CMD ["jupyter",  "--version"]
+CMD ["python",  "--version"]
 #CMD ["./nbook_tsnb_run.sh"]
 #CMD ["./nbook_tf_run.sh"]
