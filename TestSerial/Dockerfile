@@ -3,7 +3,7 @@
 # Todo set up tensorflow for arm
 #FROM BASE as TENSORFLOW
 #get tensorflow set up for arm host platform (linux/arm64/v8)
-FROM  arm64v8/python:3.10 As base
+FROM  arm64v8/python:3.9.2 As base
 
 FROM base AS serial
 
