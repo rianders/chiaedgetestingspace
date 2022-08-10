@@ -2,7 +2,7 @@
 #FROM jupyter/base-notebook
 #FROM jupyter/base-notebook
 #FROM  arm64v8/python:3.10 As base
-FROM  python:3.10 As base
+FROM  python:3.9.2 As base
 
 # RUN apt-get update
 
