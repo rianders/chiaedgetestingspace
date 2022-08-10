@@ -15,7 +15,7 @@ RUN echo "install done"
 FROM gpio As serial 
 
 RUN echo "installing pyserial"
-RUN pip pyserial
+RUN pip install pyserial
 RUN echo "install done"
 
 FROM serial As base 
