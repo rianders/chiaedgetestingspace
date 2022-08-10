@@ -1,4 +1,4 @@
-FROM  python:3.9.12 As base
+FROM  python:3.8 As base
 
 RUN pip install notebook
 
