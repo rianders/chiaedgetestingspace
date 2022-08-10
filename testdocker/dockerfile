@@ -17,6 +17,6 @@ COPY . .
 
 RUN echo "Running testseiral.ipynb"
 
-CMD ["jupyter --version"]
+CMD ["jupyter",  "--version"]
 #CMD ["./nbook_tsnb_run.sh"]
 #CMD ["./nbook_tf_run.sh"]
