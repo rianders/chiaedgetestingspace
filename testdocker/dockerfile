@@ -11,8 +11,8 @@ FROM base AS serial
 
 RUN echo "installing pandas, numpy, matplotlib, plotly, RPi.GPIO, pyserial , and python"
 
-RUN pip install pandas numpy matplotlib plotly RPi.GPIO pyserial
-
+RUN pip install pandas numpy matplotlib plotly pyserial
+#RUN pip install pandas numpy matplotlib plotly RPi.GPIO pyserial
 COPY . .
 
 RUN echo "Running testseiral.ipynb"
