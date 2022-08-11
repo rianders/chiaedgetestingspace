@@ -3,7 +3,7 @@ FROM python:3.9.2 As base
 #FROM  balenalib/raspberrypi400-64-ubuntu-python:3.9 As base
 # FROM  python:3.7 As base
 # RUN echo "upgrade pip"
-# RUN pip install --upgrade pip
+RUN pip install --upgrade pip
 # RUN echo "upgrade done"
 
 RUN echo "installing notebook"
