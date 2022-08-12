@@ -1,5 +1,7 @@
 FROM balenalib/raspberrypi4-64-python:3.9 As base
 
+RUN apt-get update -y && apt-get install -y \
+     gcc libhdf5-dev vim linux-libc-dev python3-dev
 
 #FROM balenalib/aarch64-ubuntu-python:3.9.10-hirsute As base
 
@@ -14,16 +16,16 @@ FROM balenalib/raspberrypi4-64-python:3.9 As base
 # RUN echo "upgrade done"
 
 RUN pip install notebook
+RUN pip install pandas numpy matplotlib plotly
 
 RUN echo "install tensorflow"
 RUN pip3 install tensorflow-aarch64 -f https://tf.kmtea.eu/whl/stable.html
 RUN echo "install done"
 
-RUN pip install pandas numpy matplotlib plotly
 
 #RUN [ "cross-build-end" ]
 
-COPY . .
+COPY testserial.ipynb .
 
 RUN echo "Running testseiral.ipynb"
 
