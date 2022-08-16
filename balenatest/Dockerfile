@@ -22,5 +22,6 @@ ENV LD_LIBRARY_PATH /mjpg-streamer/mjpg-streamer-experimental
 RUN mkdir /var/www
 RUN cp ./www/stream_simple.html /var/www/index.html
 
+RUN ls
 # Run the streamer
 ENTRYPOINT mjpg_streamer -o "./output_http.so -w /var/www" -i "./input_raspicam.so"
