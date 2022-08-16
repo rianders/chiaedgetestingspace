@@ -1,13 +1,17 @@
 FROM balenalib/raspberrypi4-64:latest
 
 # Install dependencies
-RUN apt-get update
+
+RUN apt-get -y update
+RUN apt-get -y upgrade
 #RUN apt-get -y install git cmake libjpeg8-dev
-RUN apt-get -y install git cmake libjpeg62-turbo-dev
+# libj peg8-dev might be outdated
+
+RUN apt-get -y install git cmake  libjpeg62-turbo-dev
 
 RUN apt-get install build-essential
 
-RUN apt-get -y install libraspberrypi-dev
+#RUN apt-get -y install libraspberrypi-dev
 # https://github.com/jacksonliam/mjpg-streamer/issues/203
 
 RUN apt-get -y install gcc g++
