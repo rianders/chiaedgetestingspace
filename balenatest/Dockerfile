@@ -2,7 +2,11 @@ FROM balenalib/raspberrypi4-64:latest
 
 # Install dependencies
 RUN apt-get update
-RUN apt-get -y install git cmake libjpeg8-dev
+#RUN apt-get -y install git cmake libjpeg8-dev
+RUN apt-get -y install git cmake libjpeg62-turbo-dev
+
+RUN apt-get install build-essential
+
 RUN apt-get -y install gcc g++
 RUN apt-get -y install pkg-config
 RUN apt-get -y install libraspberrypi0 libraspberrypi-dev libraspberrypi-doc libraspberrypi-bin
