@@ -7,6 +7,9 @@ RUN apt-get -y install git cmake libjpeg62-turbo-dev
 
 RUN apt-get install build-essential
 
+RUN apt-get -y install libraspberrypi-dev
+# https://github.com/jacksonliam/mjpg-streamer/issues/203
+
 RUN apt-get -y install gcc g++
 RUN apt-get -y install pkg-config
 RUN apt-get -y install libraspberrypi0 libraspberrypi-dev libraspberrypi-doc libraspberrypi-bin
