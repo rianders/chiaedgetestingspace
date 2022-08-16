@@ -1,4 +1,5 @@
-FROM balenalib/raspberrypi4-64:latest
+FROM balenalib/raspberrypi4-64-python:3.9
+#FROM balenalib/raspberrypi4-64:latest
 
 # Install dependencies
 
@@ -33,7 +34,8 @@ RUN cp ./www/stream_simple.html /var/www/index.html
 # Run the streamer
 #ENTRYPOINT mjpg_streamer -o "output_http.so -w /var/www" -i "input_raspicam.so"
 #ENTRYPOINT mjpg_streamer -o "./output_http.so -w /var/www" -i "./input_raspicam.so"
-ENTRYPOINT ["mjpg_streamer" ,"-i",  "./input_uvc.so"]
+ENTRYPOINT ["mjpg_streamer" ,"-i ", "./input_raspicam.so"]
+#ENTRYPOINT ["mjpg_streamer" ,"-i",  "./input_uvc.so"]
 #ENTRYPOINT ["mjpg_streamer", "-o", "./output_http.so -w /var/www" ,"-i",  "./input_uvc.so"]
 
 CMD ["/bin/bash"]
