@@ -14,6 +14,11 @@ RUN apt-get -y upgrade
 
 RUN apt-get install python3-picamera
 
+COPY . .
+RUN echo "./python_sOne_run.sh"
+
+#CMD ["python", "-u", "TestSerial.py"]
+
 # RUN apt-get -y install git cmake  libjpeg62-turbo-dev
 
 # RUN apt-get install build-essential
@@ -44,4 +49,4 @@ RUN apt-get install python3-picamera
 #ENTRYPOINT ["mjpg_streamer" ,"-i",  "./input_uvc.so"]
 #ENTRYPOINT ["mjpg_streamer", "-o", "./output_http.so -w /var/www" ,"-i",  "./input_uvc.so"]
 #CMD ["sleep",'1000']
-CMD ["/bin/bash"]
+#CMD ["/bin/bash"]
