@@ -17,7 +17,7 @@ RUN apt-get install python3-picamera
 COPY . .
 RUN echo "./python_sOne_run.sh"
 
-#CMD ["python", "-u", "TestSerial.py"]
+CMD ["./python_sOne_run.sh"]
 
 # RUN apt-get -y install git cmake  libjpeg62-turbo-dev
 
