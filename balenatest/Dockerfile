@@ -1,4 +1,4 @@
-FROM balenalib/raspberrypi4-debian-python:3.9-buster-build
+FROM balenalib/raspberrypi3-debian-python:3.9-buster-build
 #FROM balenalib/raspberrypi4-64-python:3.9-sid doesn't work
 
 #FROM balenalib/raspberrypi4-64-python:3.9
@@ -23,7 +23,8 @@ COPY stream_camera.py .
 COPY . .
 #RUN echo "./python_sOne_run.sh"
 
-CMD ["python3", "python_script_1.py"]
+CMD ["python3", "stream_camera.py"]
+#CMD ["python3", "python_script_1.py"]
 #CMD ["./python_sOne_run.sh"]
 
 
