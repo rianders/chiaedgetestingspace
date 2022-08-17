@@ -1,4 +1,4 @@
 #!/bin/bash
 
 echo "run python_script_one"
-python3 python_script_two.py 
+python3 python_script_2.py 
