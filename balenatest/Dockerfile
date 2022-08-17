@@ -1,4 +1,4 @@
-FROM balenalib/raspberrypi4-64-debian-python:3.7-buster-build
+FROM balenalib/raspberrypi4-64-debian-python:3.9-buster-build
 #FROM balenalib/raspberrypi4-64-python:3.9-sid doesn't work
 
 #FROM balenalib/raspberrypi4-64-python:3.9
