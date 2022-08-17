@@ -1,4 +1,5 @@
-FROM balenalib/raspberrypi4-64-python:3.9-sid
+FROM balenalib/raspberrypi4-64:latest
+#FROM balenalib/raspberrypi4-64-python:3.9-sid doesn't work
 
 #FROM balenalib/raspberrypi4-64-python:3.9
 #^ different log message
