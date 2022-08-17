@@ -12,28 +12,30 @@ RUN apt-get -y upgrade
 #RUN apt-get -y install git cmake libjpeg8-dev
 # libj peg8-dev might be outdated
 
-RUN apt-get -y install git cmake  libjpeg62-turbo-dev
+RUN apt-get install python3-picamera
 
-RUN apt-get install build-essential
+# RUN apt-get -y install git cmake  libjpeg62-turbo-dev
 
-#RUN apt-get -y install libraspberrypi-dev
-# https://github.com/jacksonliam/mjpg-streamer/issues/203
+# RUN apt-get install build-essential
 
-RUN apt-get -y install gcc g++
-RUN apt-get -y install pkg-config
-RUN apt-get -y install libraspberrypi0 libraspberrypi-dev libraspberrypi-doc libraspberrypi-bin
+# #RUN apt-get -y install libraspberrypi-dev
+# # https://github.com/jacksonliam/mjpg-streamer/issues/203
 
-# Clone and build mjpg-streamer
-RUN git clone https://github.com/jacksonliam/mjpg-streamer.git
-WORKDIR /mjpg-streamer/mjpg-streamer-experimental
-RUN make
-RUN make install
-ENV LD_LIBRARY_PATH /mjpg-streamer/mjpg-streamer-experimental
+# RUN apt-get -y install gcc g++
+# RUN apt-get -y install pkg-config
+# RUN apt-get -y install libraspberrypi0 libraspberrypi-dev libraspberrypi-doc libraspberrypi-bin
 
-RUN ls
-# Set up simple stream website
-RUN mkdir /var/www
-RUN cp ./www/stream_simple.html /var/www/index.html
+# # Clone and build mjpg-streamer
+# RUN git clone https://github.com/jacksonliam/mjpg-streamer.git
+# WORKDIR /mjpg-streamer/mjpg-streamer-experimental
+# RUN make
+# RUN make install
+# ENV LD_LIBRARY_PATH /mjpg-streamer/mjpg-streamer-experimental
+
+# RUN ls
+# # Set up simple stream website
+# RUN mkdir /var/www
+# RUN cp ./www/stream_simple.html /var/www/index.html
 
 # Run the streamer
 #ENTRYPOINT mjpg_streamer -o "output_http.so -w /var/www" -i "input_raspicam.so"
@@ -41,5 +43,5 @@ RUN cp ./www/stream_simple.html /var/www/index.html
 #ENTRYPOINT ["mjpg_streamer" ,"-i ", "./input_raspicam.so"]
 #ENTRYPOINT ["mjpg_streamer" ,"-i",  "./input_uvc.so"]
 #ENTRYPOINT ["mjpg_streamer", "-o", "./output_http.so -w /var/www" ,"-i",  "./input_uvc.so"]
-CMD ["sleep",'1000']
-#CMD ["/bin/bash"]
+#CMD ["sleep",'1000']
+CMD ["/bin/bash"]
