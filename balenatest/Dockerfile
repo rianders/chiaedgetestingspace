@@ -8,6 +8,11 @@ RUN apt-get -y upgrade
 #RUN apt-get -y install git cmake libjpeg8-dev
 # libj peg8-dev might be outdated
 RUN apt-get install python3-picamera
+RUN apt-get python3 -c "import picamera"
+RUN pip install picamera
+RUN pip install "picamera[array]"
+RUN pip install -U picamera
+
 
 #FROM balenalib/raspberrypi3-debian-python:3.7-buster
 RUN install_packages \
@@ -20,7 +25,8 @@ COPY . .
 
 #CMD ["python3", "stream_camera.py"]
 EXPOSE 8000
-CMD ["python3", "python_script_1.py"]
+CMD ["raspistill", "-o", "image.jpg"]
+#CMD ["python3", "python_script_1.py"]
 #CMD ["./python_sOne_run.sh"]
 
 
