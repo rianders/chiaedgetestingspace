@@ -9,5 +9,5 @@ camera.start_preview()
 # Camera warm-up time
 print("About to take image")
 sleep(2)
-camera.capture('/tmp/foo.jpg')
+camera.capture('/Images/foo.jpg')
 print("Image taken")
