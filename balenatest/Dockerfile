@@ -6,6 +6,7 @@ FROM balenalib/raspberrypi3-debian-python:3.8-buster-build
 RUN apt-get -y update
 RUN apt-get -y upgrade
 RUN apt full-upgrade
+RUN apt-get install libatlas-base-dev
 
 #RUN apt-get -y install git cmake libjpeg8-dev
 # libj peg8-dev might be outdated
