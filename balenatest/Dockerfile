@@ -28,7 +28,7 @@ COPY . .
 #CMD ["python3", "stream_camera.py"]
 EXPOSE 8000
 #CMD ["libcamera-still", "-o", "image.jpg"]
-CMD ["python3", "python_script_1.py"]
+#CMD ["python3", "python_script_1.py"]
 #CMD ["./python_sOne_run.sh"]
 #CMD ["/bin/bash"]
 
