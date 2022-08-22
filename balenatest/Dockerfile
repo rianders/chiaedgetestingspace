@@ -5,6 +5,8 @@ FROM balenalib/raspberrypi3-debian-python:3.8-buster-build
 # Install dependencies
 RUN apt-get -y update
 RUN apt-get -y upgrade
+RUN apt full-upgrade
+
 #RUN apt-get -y install git cmake libjpeg8-dev
 # libj peg8-dev might be outdated
 RUN apt-get install python3-picamera
@@ -23,10 +25,10 @@ COPY stream_camera.py .
 COPY . .
 #RUN echo "./python_sOne_run.sh"
 
-CMD ["python3", "stream_camera.py"]
+#CMD ["python3", "stream_camera.py"]
 EXPOSE 8000
 #CMD ["libcamera-still", "-o", "image.jpg"]
-#CMD ["python3", "python_script_1.py"]
+CMD ["python3", "python_script_1.py"]
 #CMD ["./python_sOne_run.sh"]
 #CMD ["/bin/bash"]
 
