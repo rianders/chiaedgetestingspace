@@ -26,9 +26,9 @@ COPY . .
 #CMD ["python3", "stream_camera.py"]
 EXPOSE 8000
 #CMD ["libcamera-still", "-o", "image.jpg"]
-CMD ["python3", "python_script_1.py"]
+#CMD ["python3", "python_script_1.py"]
 #CMD ["./python_sOne_run.sh"]
-
+CMD ["/bin/bash"]
 
 
 
@@ -63,4 +63,3 @@ CMD ["python3", "python_script_1.py"]
 #ENTRYPOINT ["mjpg_streamer" ,"-i",  "./input_uvc.so"]
 #ENTRYPOINT ["mjpg_streamer", "-o", "./output_http.so -w /var/www" ,"-i",  "./input_uvc.so"]
 #CMD ["sleep",'1000']
-#CMD ["/bin/bash"]
