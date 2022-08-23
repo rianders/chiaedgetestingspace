@@ -25,7 +25,7 @@ WORKDIR /usr/src/app
 
 
 
-RUN chmod +x start.sh
+#RUN chmod +x start.sh
 
 # RUN usermod -a -G video root
 
