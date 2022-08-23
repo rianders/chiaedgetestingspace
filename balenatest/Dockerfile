@@ -21,6 +21,7 @@ RUN install_packages \
     v4l-utils 
 
 
+RUN pip install opencv-python
 #WORKDIR /usr/src/app
 
 
