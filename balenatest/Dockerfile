@@ -7,7 +7,7 @@ RUN install_packages \
 
 WORKDIR /usr/src/app
 
-COPY start.sh ./
+COPY . .
 
 RUN chmod +x start.sh
 
@@ -15,4 +15,5 @@ RUN chmod +x start.sh
 
 ENV UDEV=on
 
-CMD ["sh","./start.sh"]
+#CMD ["sh","./start.sh"]
+CMD ["python3", "capture_demo.py"]
