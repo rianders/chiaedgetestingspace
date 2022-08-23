@@ -10,12 +10,22 @@ RUN apt-get install libatlas-base-dev
 
 #RUN apt-get -y install git cmake libjpeg8-dev
 # libj peg8-dev might be outdated
-RUN apt-get install python3-picamera
-#RUN apt-get python3 -c "import picamera"
-RUN pip install picamera
-RUN pip install "picamera[array]"
-RUN pip install -U picamera
 
+#RUN apt-get install python3-picamera2
+
+#RUN apt-get install python3-picamera
+#RUN apt-get python3 -c "import picamera"
+#RUN pip install picamera
+#RUN pip install "picamera[array]"
+#RUN pip install -U picamera
+
+RUN apt-get install libcamera-dev
+
+
+RUN apt-get install -y python3-kms++
+RUN apt-get install -y python3-pyqt5 python3-prctl libatlas-base-dev ffmpeg
+RUN pip3 install numpy --upgrade
+RUN pip3 install picamera2
 
 #FROM balenalib/raspberrypi3-debian-python:3.7-buster
 RUN install_packages \
@@ -23,13 +33,16 @@ RUN install_packages \
 
 COPY stream_camera.py .
 
+RUN apt-get -y install libyaml-dev python3-yaml python3-ply python3-jinja2
+
 COPY . .
 #RUN echo "./python_sOne_run.sh"
 
 #CMD ["python3", "stream_camera.py"]
 EXPOSE 8000
 #CMD ["libcamera-still", "-o", "image.jpg"]
-CMD ["python3", "python_script_1.py"]
+CMD ["python3", "libC_image.py"]
+#CMD ["python3", "python_script_1.py"]
 #CMD ["./python_sOne_run.sh"]
 #CMD ["/bin/bash"]
 
