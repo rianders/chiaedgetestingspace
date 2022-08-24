@@ -6,6 +6,7 @@ RUN apt-get -y update
 RUN apt-get -y upgrade
 RUN apt full-upgrade
 RUN pip install --upgrade pip
+RUN pip3 install --upgrade pip setuptools wheel
 
 #RUN cd libcamera_python
 RUN python3 -m pip install ./libcamera-1.0.1-cp39-cp39-linux_armv7l.whl
@@ -21,7 +22,9 @@ RUN install_packages \
     v4l-utils 
 
 
-RUN pip install opencv-python
+RUN pip install "opencv-python-headless<4.3" 
+#RUN pip install "opencv-python-headless<4.3"
+#RUN pip install opencv-python
 #WORKDIR /usr/src/app
 
 
