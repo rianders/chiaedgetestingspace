@@ -1,10 +1,9 @@
-FROM balenalib/raspberrypi3-debian-python:3.9-buster-build
+FROM balenalib/raspberrypi3-debian-python:3.9-bullseye-build
 #FROM balenalib/raspberrypi4-64-python:3.9
 #FROM balenalib/raspberrypi4-64:latest
 
 # Install dependencies
 RUN apt-get -y update
-RUN apt-get -y upgrade
 RUN apt full-upgrade
 RUN pip install --upgrade pip
 RUN apt-get install libatlas-base-dev
