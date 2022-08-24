@@ -16,7 +16,8 @@ RUN pip3 install --upgrade \
 
 RUN pip3 install --upgrade \
     picamera2
-# COPY . .
+
+COPY . .
 
 # RUN apt-get -y update
 # RUN apt-get -y upgrade
@@ -42,8 +43,6 @@ RUN pip3 install --upgrade \
 # #RUN pip install "opencv-python-headless<4.3"
 # #RUN pip install opencv-python
 # #WORKDIR /usr/src/app
-
-
 
 # #RUN chmod +x start.sh
 
