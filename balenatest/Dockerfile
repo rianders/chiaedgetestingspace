@@ -43,6 +43,8 @@ COPY . .
 #RUN echo "./python_sOne_run.sh"
 
 #CMD ["python3", "stream_camera.py"]
-EXPOSE 8000
-#CMD ["libcamera-still", "-o", "image.jpg"]
+#EXPOSE 8000
+CMD ["python3", "libcam_image.py"]
+
+RUN ls
 #CMD ["python3", "stream_camera.py"]
