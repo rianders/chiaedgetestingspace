@@ -37,7 +37,7 @@ RUN install_packages \
     python3-picamera
 
 
-ENV UDEV=on
+#ENV UDEV=on
 
 COPY . .
 #RUN echo "./python_sOne_run.sh"
