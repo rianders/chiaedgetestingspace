@@ -7,5 +7,7 @@ import subprocess
 date = subprocess.getoutput("date +%F")
 time = subprocess.getoutput("date +%H:%M")
 
-out = os.system("libcamera-jpeg -o test.jpg")
+
+# Take picture
+out = os.system("libcamera-still -o ~/Pictures/"+date+"/"+time+".jpg --autofocus >> test.txt")
 os.system("echo '" + str(out) + "' >> test.txt")
