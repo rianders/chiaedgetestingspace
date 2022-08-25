@@ -10,4 +10,4 @@ time = subprocess.getoutput("date +%H:%M")
 # Move directory
 os.system('cd images')
 # Take picture
-out = os.system("libcamera-still -o "+date+"/"+time+".jpg")
+out = os.system("libcamera-still -o ~/images/"+date+"/"+time+".jpg")
