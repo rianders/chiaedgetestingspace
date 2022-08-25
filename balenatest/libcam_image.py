@@ -7,6 +7,7 @@ import subprocess
 date = subprocess.getoutput("date +%F")
 time = subprocess.getoutput("date +%H:%M")
 
-
+# Move directory
+os.chdir('./images')
 # Take picture
 out = os.system("libcamera-still -o ~/Pictures/"+date+"/"+time+".jpg")
