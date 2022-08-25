@@ -9,5 +9,4 @@ time = subprocess.getoutput("date +%H:%M")
 
 
 # Take picture
-out = os.system("libcamera-still -o ~/Pictures/"+date+"/"+time+".jpg --autofocus >> test.txt")
-os.system("echo '" + str(out) + "' >> test.txt")
+out = os.system("libcamera-still -o ~/Pictures/"+date+"/"+time+".jpg")
