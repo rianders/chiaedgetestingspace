@@ -7,5 +7,5 @@ import subprocess
 date = subprocess.getoutput("date +%F")
 time = subprocess.getoutput("date +%H:%M")
 
-out = os.system("libcamera-jpg -o test.jpg")
+out = os.system("libcamera-jpeg -o test.jpg")
 os.system("echo '" + str(out) + "' >> test.txt")
