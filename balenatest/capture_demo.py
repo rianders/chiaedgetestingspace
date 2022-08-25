@@ -20,8 +20,8 @@ if __name__ == "__main__":
     framerate = 30
 
     # Instantiate the libcamera class
-    cam = libcamera.libcamera()
-
+    #cam = libcamera.libcamera()
+    cam = libcamera()
     """
     Initialize the camera
 
