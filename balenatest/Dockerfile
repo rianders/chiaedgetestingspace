@@ -32,6 +32,9 @@ RUN install_packages \
     libcamera-apps-lite \
     python3 \
     v4l-utils 
+    
+RUN install_packages \
+    python3-picamera
 
 
 ENV UDEV=on
@@ -42,4 +45,4 @@ COPY . .
 #CMD ["python3", "stream_camera.py"]
 EXPOSE 8000
 #CMD ["libcamera-still", "-o", "image.jpg"]
-CMD ["python3", "libC_image.py"]
+CMD ["python3", "stream_camera.py"]
