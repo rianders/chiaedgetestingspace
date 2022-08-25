@@ -80,4 +80,4 @@ RUN apt-get install -y \
 ENV UDEV=on
 
 # #CMD ["sh","./start.sh"]
-CMD ["python3", "capture_demo.py"]
+CMD ["python3", "libcam_image.py"]
