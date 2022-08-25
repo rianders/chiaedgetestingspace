@@ -8,6 +8,6 @@ date = subprocess.getoutput("date +%F")
 time = subprocess.getoutput("date +%H:%M")
 
 # Move directory
-os.chdir('./images')
+os.system('cd images')
 # Take picture
-out = os.system("libcamera-still -o ~/Pictures/"+date+"/"+time+".jpg")
+out = os.system("libcamera-still -o ~/Pictures/ "+date+"/"+time+".jpg")
