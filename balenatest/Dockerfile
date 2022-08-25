@@ -59,4 +59,4 @@ RUN install_packages \
 ENV UDEV=on
 
 # #CMD ["sh","./start.sh"]
-CMD ["python3", "piCameraTwo_image.py"]
+CMD ["python3", "capture_demo.py"]
