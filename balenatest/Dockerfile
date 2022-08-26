@@ -27,6 +27,16 @@ RUN apt-get update && apt-get install -y \
 RUN pip3 install --upgrade \
     numpy
 
+RUN apt-get install python3-picamera2
+
+RUN apt-get install python3-picamera
+RUN apt-get python3 -c "import picamera"
+RUN pip install picamera
+RUN pip install "picamera[array]"
+RUN pip install -U picamera
+RUN install_packages \
+    python3-picamera
+
 #ENV UDEV=on
 
 #RUN pip install opencv-python
