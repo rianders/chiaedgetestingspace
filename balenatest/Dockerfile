@@ -39,7 +39,7 @@ COPY . .
 #EXPOSE 8000
 #CMD ["./python_sTwo_run.sh"]
 
-CMD ["libcamera-jpeg", "-o" , "test.jpg"]
-
+CMD ["/bin/bash"]
+#/bin/bash
 #RUN ls
 #CMD ["python3", "stream_camera.py"]
