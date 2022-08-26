@@ -4,8 +4,8 @@ import os
 import subprocess
 
 # Get date and separate day and time
-date = subprocess.getoutput("date +%F")
-time = subprocess.getoutput("date +%H:%M")
+#date = subprocess.getoutput("date +%F")
+#time = subprocess.getoutput("date +%H:%M")
 
 print("Start libcamera")
 # Take picture
