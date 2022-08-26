@@ -5,13 +5,13 @@ FROM balenalib/raspberrypi4-64-debian-python:3.9-bullseye-build
 
 COPY . .
 
-RUN apt-get -y update
-RUN apt-get -y upgrade
+# RUN apt-get -y update
+# RUN apt-get -y upgrade
 # RUN apt full-upgrade
 
 # RUN pip install --upgrade pip
 
-RUN pip3 install --upgrade pip setuptools wheel
+# RUN pip3 install --upgrade pip setuptools wheel
 
 # RUN pip install opencv-python
 
