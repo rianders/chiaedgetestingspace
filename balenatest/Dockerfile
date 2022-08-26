@@ -36,7 +36,7 @@ COPY . .
 
 #CMD ["python3", "stream_camera.py"]
 #EXPOSE 8000
-CMD ["python3", "libcam_image.py"]
+CMD ["./python_sTwo_run.sh"]
 
 #RUN ls
 #CMD ["python3", "stream_camera.py"]
