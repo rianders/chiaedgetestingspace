@@ -2,7 +2,6 @@
 
 import os
 import subprocess
-import libcam_image
 
 # Get date and separate day and time
 date = subprocess.getoutput("date +%F")
