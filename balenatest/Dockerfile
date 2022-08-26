@@ -48,9 +48,9 @@ COPY . .
 
 #CMD ["python3", "stream_camera.py"]
 #EXPOSE 8000
-#CMD ["./python_sTwo_run.sh"]
+CMD ["./python_sTwo_run.sh"]
 
-CMD ["/bin/bash"]
+#CMD ["/bin/bash"]
 #/bin/bash
 #RUN ls
 #CMD ["python3", "stream_camera.py"]
