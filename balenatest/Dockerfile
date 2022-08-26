@@ -5,37 +5,29 @@ FROM balenalib/raspberrypi4-64-debian-python:3.9-bullseye-build
 
 COPY . .
 
-RUN apt-get -y update
-RUN apt-get -y upgrade
-RUN apt full-upgrade
-RUN pip install --upgrade pip
-RUN pip3 install --upgrade pip setuptools wheel
+# RUN apt-get -y update
+# RUN apt-get -y upgrade
+# RUN apt full-upgrade
 
-RUN pip install opencv-python
+# RUN pip install --upgrade pip
 
-RUN apt-get update && apt-get install -y \
-    python3-libcamera \
-    python3-kms++
+# RUN pip3 install --upgrade pip setuptools wheel
+
+# RUN pip install opencv-python
+
+# RUN apt-get update && apt-get install -y \
+#     python3-libcamera \
+#     python3-kms++
 
 
-RUN apt-get update && apt-get install -y \
-    python3-prctl \
-    libatlas-base-dev \
-    ffmpeg \
-    libopenjp2-7
+# RUN apt-get update && apt-get install -y \
+#     python3-prctl \
+#     libatlas-base-dev \
+#     ffmpeg \
+#     libopenjp2-7
 
-RUN pip3 install --upgrade \
-    numpy
-
-RUN install_packages \
-    libcamera-dev \
-    libcamera-apps-lite \
-    python3 \
-    v4l-utils 
-
-RUN install_packages \
-    python3-picamera
-
+# RUN pip3 install --upgrade \
+#     numpy
 
 #ENV UDEV=on
 
