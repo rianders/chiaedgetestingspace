@@ -13,8 +13,6 @@ RUN pip install --upgrade pip
 
 # RUN pip3 install --upgrade pip setuptools wheel
 
-RUN pip install opencv-python
-
 RUN apt-get update && apt-get install -y \
     python3-libcamera \
     python3-kms++
@@ -30,6 +28,9 @@ RUN pip3 install --upgrade \
     numpy
 
 #ENV UDEV=on
+
+#RUN pip install opencv-python
+
 
 COPY . .
 #RUN echo "./python_sOne_run.sh"
