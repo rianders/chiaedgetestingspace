@@ -7,6 +7,8 @@ import subprocess
 date = subprocess.getoutput("date +%F")
 time = subprocess.getoutput("date +%H:%M")
 
+print("Start libcamera")
 # Take picture
 out = os.system("libcamera-still -o test.jpg")
 #out = os.system("libcamera-still -o "+date+"/"+time+".jpg")
+print("End libcamera")
