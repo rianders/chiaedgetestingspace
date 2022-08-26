@@ -38,5 +38,5 @@ COPY . .
 #EXPOSE 8000
 CMD ["python3", "libcam_image.py"]
 
-RUN ls
+#RUN ls
 #CMD ["python3", "stream_camera.py"]
