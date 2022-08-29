@@ -46,9 +46,9 @@ RUN pip3 install --upgrade \
 COPY . .
 #RUN echo "./python_sTwo_run.sh"
 
-CMD ["libcamera-jpeg", "-o", "test.jpeg"]
+#CMD ["libcamera-jpeg", "-o", "test.jpeg"]
 #EXPOSE 8000
-#CMD ["./python_sTwo_run.sh"]
+CMD ["./python_sTwo_run.sh"]
 
 #CMD ["/bin/bash"]
 #/bin/bash
