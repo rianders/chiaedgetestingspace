@@ -18,7 +18,7 @@ RUN apt-get update && apt-get upgrade && apt-get install -y \
     python3-libcamera-dbgsym \
     libcamera-apps \
     libcamera-apps-dbgsym \
-    libcamera-apps-lite \
+    #libcamera-apps-lite \
     libcamera-dev \ 
     libcamera-doc \
     libcamera-tools \ 
