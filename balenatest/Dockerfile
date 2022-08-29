@@ -48,7 +48,9 @@ COPY . .
 
 #CMD ["libcamera-jpeg", "-o", "test.jpeg"]
 #EXPOSE 8000
-CMD ["./python_sTwo_run.sh"]
+
+CMD ["LIBCAMERA_LOG_LEVELS=*:0", "libcamera-hello", "--list-cameras"]
+#CMD ["./python_sTwo_run.sh"]
 
 #CMD ["/bin/bash"]
 #/bin/bash
