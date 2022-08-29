@@ -46,13 +46,14 @@ RUN pip3 install --upgrade \
 # RUN pip install -U picamera
 # RUN install_packages \
 #     python3-picamera
-
+COPY . .
+WORKDIR /usr/src/app
 ENV UDEV=on
 
 #RUN pip install opencv-python
 
 
-COPY . .
+
 #RUN echo "./python_sTwo_run.sh"
 
 CMD ["libcamera-still", "-o", "test.jpeg"]
