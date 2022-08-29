@@ -15,7 +15,15 @@ RUN pip install --upgrade pip
 
 RUN apt-get update && apt-get install -y \
     python3-libcamera \
+    python3-libcamera-dbgsym \
     libcamera-apps \
+    libcamera-apps-dbgsym \
+    libcamera-dev \ 
+    libcamera-doc \
+    libcamera-tools \ 
+    libcamera-tools-dbgsym \
+    libcamera0 \
+    libcamera0-dbgsym \
     python3-kms++
 
 
@@ -50,6 +58,8 @@ COPY . .
 #EXPOSE 8000
 
 CMD ["LIBCAMERA_LOG_LEVELS=*:0", "libcamera-hello", "--list-cameras"]
+
+#LIBCAMERA_LOG_LEVELS=*:0 libcamera-hello --list-cameras
 #CMD ["./python_sTwo_run.sh"]
 
 #CMD ["/bin/bash"]
