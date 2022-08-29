@@ -21,5 +21,5 @@ fi
 echo  "$DEVICES"
 
 
-docker run $DEVICES  --privileged -it ecy14mhfh/balenatest:$hash_tsnb /bin/bash
+docker run $DEVICES  --privileged -it ecy14mhfh/balenatest:$hash_tsnb #/bin/bash
 #docker run -p 8888:8888 --privileged -it ecy14mhfh/balenatest:$hash_tsnb /bin/bash
