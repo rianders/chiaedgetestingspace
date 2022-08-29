@@ -18,6 +18,7 @@ RUN apt-get update && apt-get upgrade && apt-get install -y \
     python3-libcamera-dbgsym \
     libcamera-apps \
     libcamera-apps-dbgsym \
+    libcamera-apps-lite \
     libcamera-dev \ 
     libcamera-doc \
     libcamera-tools \ 
@@ -25,6 +26,7 @@ RUN apt-get update && apt-get upgrade && apt-get install -y \
     libcamera0 \
     libcamera0-dbgsym \
     python3-kms++ \
+    v4l-utils \
     udev
 
 
