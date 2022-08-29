@@ -1,7 +1,7 @@
 FROM balenalib/raspberrypi4-64-debian-python:3.9-bullseye-build
 
-# RUN pip3 install --upgrade \
-#     picamera2
+RUN pip3 install --upgrade \
+    picamera2
 
 COPY . .
 
