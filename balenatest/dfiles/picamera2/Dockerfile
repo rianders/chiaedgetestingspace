@@ -11,13 +11,13 @@ RUN apt-get install libatlas-base-dev
 #RUN apt-get -y install git cmake libjpeg8-dev
 # libj peg8-dev might be outdated
 
-#RUN apt-get install python3-picamera2
+RUN apt-get install python3-picamera2
 
-#RUN apt-get install python3-picamera
-#RUN apt-get python3 -c "import picamera"
-#RUN pip install picamera
-#RUN pip install "picamera[array]"
-#RUN pip install -U picamera
+RUN apt-get install python3-picamera
+RUN apt-get python3 -c "import picamera"
+RUN pip install picamera
+RUN pip install "picamera[array]"
+RUN pip install -U picamera
 
 RUN apt-get install libcamera-dev
 

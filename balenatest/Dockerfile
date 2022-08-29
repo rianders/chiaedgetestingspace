@@ -8,11 +8,12 @@ RUN apt-get -y upgrade
 # RUN apt full-upgrade
 
 RUN pip install --upgrade pip
-
-RUN pip3 install picamera2 --upgrade
+#apt-get -y install udev
+#RUN pip3 install picamera2 --upgrade
+#RUN pip3 install picamera2 --upgrade
 # RUN pip3 install --upgrade pip setuptools wheel
 
-RUN apt-get update && apt-get install -y \
+RUN apt-get update && apt-get upgrade && apt-get install -y \
     python3-libcamera \
     python3-libcamera-dbgsym \
     libcamera-apps \
@@ -23,7 +24,8 @@ RUN apt-get update && apt-get install -y \
     libcamera-tools-dbgsym \
     libcamera0 \
     libcamera0-dbgsym \
-    python3-kms++
+    python3-kms++ \
+    udev
 
 
 RUN apt-get update && apt-get install -y \
