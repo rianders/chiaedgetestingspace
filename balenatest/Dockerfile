@@ -55,7 +55,7 @@ ENV UDEV=on
 COPY . .
 #RUN echo "./python_sTwo_run.sh"
 
-CMD ["libcamera-jstill", "-o", "test.jpeg"]
+CMD ["libcamera-still", "-o", "test.jpeg"]
 #EXPOSE 8000
 
 #CMD ["LIBCAMERA_LOG_LEVELS=*:0", "libcamera-hello", "--list-cameras"]
