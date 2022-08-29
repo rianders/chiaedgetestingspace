@@ -47,7 +47,7 @@ RUN pip3 install --upgrade \
 # RUN install_packages \
 #     python3-picamera
 
-#ENV UDEV=on
+ENV UDEV=on
 
 #RUN pip install opencv-python
 
