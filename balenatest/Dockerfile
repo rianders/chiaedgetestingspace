@@ -1,7 +1,5 @@
 FROM balenalib/raspberrypi4-64-debian-python:3.9-bullseye-build
 
-RUN pip3 install --upgrade \
-    picamera2
 
 COPY . .
 
@@ -11,6 +9,7 @@ RUN apt-get -y upgrade
 
 RUN pip install --upgrade pip
 
+RUN pip3 install picamera2 --upgrade
 # RUN pip3 install --upgrade pip setuptools wheel
 
 RUN apt-get update && apt-get install -y \
