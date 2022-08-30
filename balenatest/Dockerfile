@@ -49,7 +49,8 @@ RUN pip3 install --upgrade \
 # RUN install_packages \
 #     python3-picamera
 COPY . .
-WORKDIR /usr/src/app
+#WORKDIR /usr/src/app
+RUN mkdir -p /app/balenaimage
 ENV UDEV=on
 
 #RUN pip install opencv-python
