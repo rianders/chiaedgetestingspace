@@ -8,9 +8,11 @@ echo $hash_tsnb
 
 #docker run -d --name BalImgCon --privileged -it ecy14mhfh/balenatest:$hash_tsnb
 
-docker volume create balena-volume
-docker run --rm --privileged -it -v balena-vol:/usr/src/app ecy14mhfh/balenatest:$hash_tsnb ls /usr/src/app
+#docker volume create balena-volume
+#docker run --rm --privileged -it -v balena-vol:/app/balenaimage ecy14mhfh/balenatest:$hash_tsnb ls /app/balenaimage
 
+docker run --rm --privileged -it -v /tmp/foo:/app/balenaimage ecy14mhfh/balenatest:$hash_tsnb sh
+ls /app/balenaimage/
 
 #docker run -d --name BalImgCon --privileged ecy14mhfh/balenatest:$hash_tsnb
 
