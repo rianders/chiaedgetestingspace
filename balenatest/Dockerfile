@@ -59,13 +59,13 @@ ENV UDEV=on
 
 #RUN echo "./python_sTwo_run.sh"
 
-CMD ["libcamera-still", "-o", "test.jpeg"]
+#CMD ["libcamera-still", "-o", "test.jpeg"]
 #EXPOSE 8000
 
 #CMD ["LIBCAMERA_LOG_LEVELS=*:0", "libcamera-hello", "--list-cameras"]
 
 #LIBCAMERA_LOG_LEVELS=*:0 libcamera-hello --list-cameras
-#CMD ["./python_sTwo_run.sh"]
+CMD ["./python_sTwo_run.sh"]
 
 #CMD ["/bin/bash"]
 #/bin/bash
