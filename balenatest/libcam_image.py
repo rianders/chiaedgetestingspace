@@ -10,6 +10,9 @@ import subprocess
 print("Start libcamera")
 # Take picture
 #cmd = "libcamera-jpeg -o test.jpg"
+
+cmd = os.system("cd app/balena")
+
 cmd = "ls"
 out = os.system(cmd)
 cmd = "libcamera-jpeg -o test.jpg"
