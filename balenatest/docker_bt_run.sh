@@ -14,7 +14,7 @@ echo $hash_tsnb
 # docker run --rm --privileged -it -v /tmp/foo:/app/balenaimage ecy14mhfh/balenatest:$hash_tsnb sh
 # ls /app/balenaimage/
 
-docker run --rm --privileged-v /tmp/foo:/app/balenaimage ecy14mhfh/balenatest:$hash_tsnb sh
+docker run --rm --privileged -v /tmp/foo:/app/balenaimage ecy14mhfh/balenatest:$hash_tsnb sh
 ls /app/balenaimage/
 
 #docker run -d --name BalImgCon --privileged ecy14mhfh/balenatest:$hash_tsnb
