@@ -18,5 +18,5 @@ print("Start libcamera")
 # cmd = "libcamera-jpeg -o test.jpg"
 # out = os.system(cmd)
 #out = os.system("libcamera-jpeg -o test.jpg")
-out = os.system("libcamera-still -o "+date+"/"+time+".jpg -n")
+out = os.system("libcamera-still -o "+date+time+".jpg -n")
 print("End libcamera")
