@@ -2,8 +2,8 @@ FROM balenalib/raspberrypi4-64-python:3.9-bullseye-build-20220803
 # Refer to https://www.balena.io/docs/reference/base-images/base-images/
 COPY  . .
 
-RUN apt-get -y update
-RUN apt-get -y upgrade
+# RUN apt-get -y update
+# RUN apt-get -y upgrade
 
 RUN install_packages \
     python3-libcamera \
@@ -17,7 +17,7 @@ RUN install_packages \
 
 RUN pip3 install --upgrade numpy
 RUN pip3 install picamera2
-
+RUN pip3 install picamera2[gui]
 
 RUN mkdir -p /app/picamTwo_img
 ENV UDEV=on
