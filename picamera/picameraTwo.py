@@ -1,16 +1,23 @@
-from time import sleep
-from picamera import PiCamera
+#!/usr/bin/python3
 
-camera = PiCamera()
-camera.resolution = (1024, 768)
+# Capture a JPEG while still running in the preview mode. When you
+# capture to a file, the return value is the metadata for that image.
 
-# Camera warm-up time
-print("start camera")
-sleep(2)
-for i in range(5):
-    camera.capture('foo-{timestamp:%H-%M-%S-%f}.jpg')
-    print(f"photo: {i}")
-    sleep(0.5)
-print("stop camera")
+import time
 
+from picamera2 import Picamera2, Preview
 
+picam2 = Picamera2()
+
+preview_config = picam2.create_preview_configuration(main={"size": (800, 600)})
+picam2.configure(preview_config)
+
+picam2.start_preview(Preview.QTGL)
+
+picam2.start()
+time.sleep(2)
+
+metadata = picam2.capture_file("test.jpg")
+print(metadata)
+
+picam2.close()
