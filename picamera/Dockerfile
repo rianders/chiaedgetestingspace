@@ -1,6 +1,5 @@
-# Refer to https://www.balena.io/docs/reference/base-images/base-images/
 FROM balenalib/raspberrypi4-64-python:3.9-bullseye-build-20220803
-
+# Refer to https://www.balena.io/docs/reference/base-images/base-images/
 COPY  . .
 
 RUN apt-get -y update
