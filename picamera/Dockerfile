@@ -7,11 +7,13 @@ RUN apt-get -y upgrade
 
 RUN install_packages \
     python3-libcamera \
+    libcamera-apps \
     python3-kms++ \
     python3-pyqt5 \
     python3-prctl \
     libatlas-base-dev \
-    ffmpeg
+    ffmpeg \
+    udev
 
 RUN pip3 install --upgrade numpy
 RUN pip3 install picamera2
