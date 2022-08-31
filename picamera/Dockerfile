@@ -14,5 +14,6 @@ RUN pip3 install picamera2
 COPY  . .
 
 RUN mkdir -p /app/picamTwo_img
+ENV UDEV=on
 
 CMD ["./python_pct_run.sh"]
