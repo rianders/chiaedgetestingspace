@@ -15,8 +15,8 @@ RUN install_packages \
 RUN pip3 install --upgrade numpy
 RUN pip3 install --upgrade picamera2 
 
-RUN apt install -y python3-opencv
-RUN apt install -y opencv-data
+#RUN apt install -y python3-opencv
+#RUN apt install -y opencv-data
 #RUN pip3 install picamera2[gui]
 
 RUN apt-get -y update
