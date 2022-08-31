@@ -1,5 +1,9 @@
 FROM balenalib/raspberrypi4-64-python:3.9-bullseye-build-20220803
 # Refer to https://www.balena.io/docs/reference/base-images/base-images/
+
+RUN mkdir -p /usr/src/app 
+WORKDIR /usr/src/app 
+
 COPY  . .
 
 RUN install_packages \
@@ -22,7 +26,12 @@ RUN pip3 install --upgrade picamera2
 RUN apt-get -y update
 RUN apt-get -y upgrade
 
-RUN mkdir -p /app/picamTwo_img
+
+COPY requirements.txt /usr/src/app/
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY . /usr/src/app 
+
 ENV UDEV=on
 
 CMD ["./python_pct_run.sh"]
