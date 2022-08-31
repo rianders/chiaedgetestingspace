@@ -11,4 +11,8 @@ RUN install_packages \
 RUN pip3 install --upgrade numpy
 RUN pip3 install picamera2
 
+COPY  . .
+
+RUN mkdir -p /app/picamTwo_img
+
 CMD ["./python_pct_run.sh"]
