@@ -19,7 +19,7 @@
 
 
 import time
-import libcamera
+#import libcamera
 from picamera2 import Picamera2
 
 picam2 = Picamera2()
