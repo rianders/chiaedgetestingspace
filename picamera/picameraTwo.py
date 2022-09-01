@@ -14,7 +14,14 @@ picam2 = Picamera2()
 # picam2.start_preview(Preview.QTGL)
 picam2.start()
 time.sleep(2)
-picam2.capture_file("test.jpg")
+
+
+fname = (time.strftime("%y-%b-%d_%H:%M"))
+
+variable = fname + ".jpg"
+
+picam2.capture_file(variable)
+#picam2.capture_file("test.jpg")
 
 
 
