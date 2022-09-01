@@ -1,3 +1,7 @@
+import libcamera
+libcamera.ColorSpace.Sycc = libcamera.ColorSpace.Jpeg
+import picamera2 
+
 from picamera2 import Picamera2, Preview
 import time
 picam2 = Picamera2()
