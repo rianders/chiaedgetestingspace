@@ -17,12 +17,13 @@ RUN install_packages \
     python3-pyqt5 \
     python3-prctl \
     libatlas-base-dev \
+    python3-picamera2 \
     ffmpeg \
     udev
 
 RUN pip3 install --upgrade numpy
 #RUN pip3 install picamera2==0.3.2
-RUN apt install python3-picamera2
+#RUN apt install python3-picamera2
 
 #RUN apt install -y python3-opencv
 #RUN apt install -y opencv-data
