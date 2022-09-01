@@ -21,7 +21,8 @@ RUN install_packages \
     udev
 
 RUN pip3 install --upgrade numpy
-RUN pip3 install picamera2==0.3.2
+#RUN pip3 install picamera2==0.3.2
+RUN pip3 install picamera2==0.2.3
 
 #RUN apt install -y python3-opencv
 #RUN apt install -y opencv-data
