@@ -1,5 +1,7 @@
+
 import libcamera
 libcamera.ColorSpace.Sycc = libcamera.ColorSpace.Jpeg
+
 import picamera2 as Picamera2
 
 #Above is a work around to get picamera to work. If libcamera or picamera2 is 
