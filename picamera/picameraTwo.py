@@ -1,4 +1,4 @@
-
+#!/usr/bin/python3
 import libcamera
 #libcamera.ColorSpace.Sycc = libcamera.ColorSpace.Jpeg
 import picamera2 as Picamera2
