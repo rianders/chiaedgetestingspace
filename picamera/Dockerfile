@@ -37,8 +37,9 @@ RUN pip3 install --upgrade numpy
 # COPY . /usr/src/app 
 
 COPY . .
-RUN WORKDIR /usr/src/app
+#RUN WORKDIR /usr/src/app
 RUN mkdir -p /app/picamTwo_img
+VOLUME /app/picamTwo_img
 ENV UDEV=on
 
 CMD ["./python_pct_run.sh"]
