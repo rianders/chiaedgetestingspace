@@ -13,7 +13,7 @@ variable = fname + ".jpg"
 # #picam2.capture_file("test.jpg")
 metadata = picam2.capture_file(variable)
 print(metadata)
-
+print("Image taken.")
 picam2.close()
 
 
