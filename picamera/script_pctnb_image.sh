@@ -1,3 +1,3 @@
 #!/bin/bash
 
-ipython pct_image.ipynb
+ipython pctnb_image.ipynb
