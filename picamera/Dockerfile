@@ -27,6 +27,7 @@ RUN apt-get update && apt-get install -y \
     libv4l-dev
 
 
+RUN pip3 install notebook
 RUN pip3 install --upgrade numpy
 #RUN pip3 install picamera2==0.3.2
 #RUN apt install python3-picamera2
