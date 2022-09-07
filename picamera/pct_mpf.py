@@ -1,4 +1,5 @@
 from picamera2 import Picamera2
+import time
 picam2 = Picamera2()
 
 fname = (time.strftime("%y-%b-%d_%H:%M"))
