@@ -3,7 +3,7 @@
 # Todo set up tensorflow for arm
 #FROM BASE as TENSORFLOW
 #get tensorflow set up for arm host platform (linux/arm64/v8)
-FROM python:3.9.16-slim-buster AS base
+FROM balenalib/rpi-debian-python:3.9.13
 # Upgrade pip to the latest version
 RUN pip install --upgrade pip
 
