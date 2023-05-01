@@ -13,10 +13,7 @@ RUN echo "installing pandas, numpy, matplotlib, plotly, RPi.GPIO, and pyserial"
 RUN pip install pandas 
 RUN pip install numpy 
 RUN pip install matplotlib
-RUN pip install 
-RUN pip install
-RUN pip install 
-RUN pip installplotly 
+RUN pip install plotly 
 RUN pip install RPi.GPIO 
 RUN pip install pyserial
 RUN pip install platformio
