@@ -8,6 +8,11 @@
 
 FROM --platform=linux/arm64/v8 balenalib/rpi-debian-python:latest AS base
 
+RUN apt-get update && apt-get install -y \
+    libatlas-base-dev \
+    gfortran \
+    libfreetype6-dev
+
 
 # Upgrade pip to the latest version
 RUN pip install --upgrade pip
