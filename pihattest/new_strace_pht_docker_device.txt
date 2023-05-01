@@ -1,0 +1,1113 @@
+pi@rpi-control:~/projects/chiaedgetestingspace/pihattest $ ./docker_pht_run.sh
+2e1f74c
+docker run ecy14mhfh/pihattest:2e1f74c
+run the pihattest script
+execve("/usr/local/bin/python3", ["python3", "pihattest.py"], 0x7fe5f09488 /* 14 vars */) = 0
+brk(NULL)                               = 0x55c4197000
+faccessat(AT_FDCWD, "/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=31753, ...}) = 0
+mmap(NULL, 31753, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f90deb000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/local/lib/libpython3.10.so.1.0", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\20\250\5\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=22527288, ...}) = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f90de9000
+mmap(NULL, 3808352, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f90a23000
+mprotect(0x7f90d79000, 61440, PROT_NONE) = 0
+mmap(0x7f90d88000, 229376, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x355000) = 0x7f90d88000
+mmap(0x7f90dc0000, 19552, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f90dc0000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0`C\2\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=1458480, ...}) = 0
+mmap(NULL, 1531032, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f908ad000
+mprotect(0x7f90a0a000, 65536, PROT_NONE) = 0
+mmap(0x7f90a1a000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x15d000) = 0x7f90a1a000
+mmap(0x7f90a20000, 11416, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f90a20000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0q\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=160200, ...}) = 0
+mmap(NULL, 197632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f9087c000
+mprotect(0x7f90898000, 61440, PROT_NONE) = 0
+mmap(0x7f908a7000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1b000) = 0x7f908a7000
+mmap(0x7f908a9000, 13312, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f908a9000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\21\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=14560, ...}) = 0
+--- SIGWINCH {si_signo=SIGWINCH, si_code=SI_KERNEL} ---
+mmap(NULL, 78080, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f90868000
+mprotect(0x7f9086b000, 61440, PROT_NONE) = 0
+mmap(0x7f9087a000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f9087a000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libutil.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0@\22\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=14672, ...}) = 0
+mmap(NULL, 78112, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f90854000
+mprotect(0x7f90856000, 65536, PROT_NONE) = 0
+mmap(0x7f90866000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f90866000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\20\334\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=633000, ...}) = 0
+mmap(NULL, 696448, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f907a9000
+mprotect(0x7f90842000, 65536, PROT_NONE) = 0
+mmap(0x7f90852000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x99000) = 0x7f90852000
+close(3)                                = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f90de7000
+mprotect(0x7f90a1a000, 12288, PROT_READ) = 0
+mprotect(0x7f90852000, 4096, PROT_READ) = 0
+mprotect(0x7f90866000, 4096, PROT_READ) = 0
+mprotect(0x7f9087a000, 4096, PROT_READ) = 0
+mprotect(0x7f908a7000, 4096, PROT_READ) = 0
+mprotect(0x7f90d88000, 20480, PROT_READ) = 0
+mprotect(0x558efc0000, 4096, PROT_READ) = 0
+mprotect(0x7f90df6000, 4096, PROT_READ) = 0
+munmap(0x7f90deb000, 31753)             = 0
+set_tid_address(0x7f90de7e00)           = 11
+set_robust_list(0x7f90de7e10, 24)       = 0
+rt_sigaction(SIGRTMIN, {sa_handler=0x7f90882b74, sa_mask=[], sa_flags=SA_SIGINFO}, NULL, 8) = 0
+rt_sigaction(SIGRT_1, {sa_handler=0x7f90882c30, sa_mask=[], sa_flags=SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+brk(NULL)                               = 0x55c4197000
+brk(0x55c41b8000)                       = 0x55c41b8000
+openat(AT_FDCWD, "/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/share/locale/locale.alias", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_CTYPE", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=346132, ...}) = 0
+mmap(NULL, 346132, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f90754000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/gconv/gconv-modules.cache", O_RDONLY) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=27004, ...}) = 0
+mmap(NULL, 27004, PROT_READ, MAP_SHARED, 3, 0) = 0x7f90dec000
+close(3)                                = 0
+futex(0x7f90a1f394, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+getcwd("/", 4096)                       = 2
+getrandom("\x0a\xec\x13\x03\xe0\x0a\x81\x5b\xa7\xcd\x0b\xda\x59\x50\x6a\x4f\xea\x29\xa9\xa8\xfb\x37\x3b\xa5", 24, GRND_NONBLOCK) = 24
+mmap(NULL, 1048576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f90654000
+brk(0x55c41d9000)                       = 0x55c41d9000
+brk(0x55c41fd000)                       = 0x55c41fd000
+newfstatat(AT_FDCWD, "/usr/local/bin/python3", {st_mode=S_IFREG|0755, st_size=12160, ...}, 0) = 0
+readlinkat(AT_FDCWD, "/usr/local/bin/python3", "python3.10", 4096) = 10
+readlinkat(AT_FDCWD, "/usr/local/bin/python3.10", 0x7fe8610460, 4096) = -1 EINVAL (Invalid argument)
+openat(AT_FDCWD, "/usr/local/bin/pyvenv.cfg", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/local/pyvenv.cfg", O_RDONLY) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/bin/Modules/Setup.local", 0x7fe8611428, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/bin/lib/python3.10/os.py", 0x7fe8611340, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/bin/lib/python3.10/os.pyc", 0x7fe8611340, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/os.py", {st_mode=S_IFREG|0644, st_size=39514, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/local/bin/pybuilddir.txt", O_RDONLY) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/bin/lib/python3.10/lib-dynload", 0x7fe86104a0, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/lib-dynload", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+mmap(NULL, 1048576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f90554000
+sysinfo({uptime=19435, loads=[0, 0, 1472], totalram=1939197952, freeram=181305344, sharedram=1310720, bufferram=121294848, totalswap=104853504, freeswap=79949824, procs=329, totalhigh=0, freehigh=0, mem_unit=1}) = 0
+openat(AT_FDCWD, "/etc/localtime", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=118, ...}) = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=118, ...}) = 0
+read(3, "TZif2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\1\0\0\0\1\0\0\0\0"..., 4096) = 118
+lseek(3, -62, SEEK_CUR)                 = 56
+read(3, "TZif2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\1\0\0\0\1\0\0\0\0"..., 4096) = 62
+close(3)                                = 0
+brk(0x55c421e000)                       = 0x55c421e000
+newfstatat(AT_FDCWD, "/usr/local/lib/python310.zip", 0x7fe8613d20, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python310.zip", 0x7fe8613b20, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/local/lib/python3.10", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+getdents64(3, 0x55c41fd280 /* 206 entries */, 32768) = 6864
+getdents64(3, 0x55c41fd280 /* 0 entries */, 32768) = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/encodings/__init__.cpython-310-aarch64-linux-gnu.so", 0x7fe8613ef0, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/encodings/__init__.abi3.so", 0x7fe8613ef0, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/encodings/__init__.so", 0x7fe8613ef0, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/encodings/__init__.py", {st_mode=S_IFREG|0644, st_size=5620, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/encodings/__init__.py", {st_mode=S_IFREG|0644, st_size=5620, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/local/lib/python3.10/encodings/__pycache__/__init__.cpython-310.pyc", O_RDONLY|O_CLOEXEC) = 3
+fcntl(3, F_GETFD)                       = 0x1 (flags FD_CLOEXEC)
+fstat(3, {st_mode=S_IFREG|0644, st_size=3913, ...}) = 0
+ioctl(3, TCGETS, 0x7fe86140d0)          = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=3913, ...}) = 0
+read(3, "o\r\r\n\0\0\0\0:U\315b\364\25\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 3914) = 3913
+read(3, "", 1)                          = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/codecs.py", {st_mode=S_IFREG|0644, st_size=36672, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/codecs.py", {st_mode=S_IFREG|0644, st_size=36672, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/local/lib/python3.10/__pycache__/codecs.cpython-310.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=33185, ...}) = 0
+ioctl(3, TCGETS, 0x7fe8613300)          = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=33185, ...}) = 0
+read(3, "o\r\r\n\0\0\0\0:U\315b@\217\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 33186) = 33185
+read(3, "", 1)                          = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/encodings", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/encodings", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/encodings", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/local/lib/python3.10/encodings", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+getdents64(3, 0x55c420b900 /* 125 entries */, 32768) = 4224
+getdents64(3, 0x55c420b900 /* 0 entries */, 32768) = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/encodings/aliases.py", {st_mode=S_IFREG|0644, st_size=15677, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/encodings/aliases.py", {st_mode=S_IFREG|0644, st_size=15677, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/local/lib/python3.10/encodings/__pycache__/aliases.cpython-310.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=10927, ...}) = 0
+ioctl(3, TCGETS, 0x7fe8612c00)          = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=10927, ...}) = 0
+read(3, "o\r\r\n\0\0\0\0:U\315b==\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 10928) = 10927
+read(3, "", 1)                          = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/encodings", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/encodings/utf_8.py", {st_mode=S_IFREG|0644, st_size=1005, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/encodings/utf_8.py", {st_mode=S_IFREG|0644, st_size=1005, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/local/lib/python3.10/encodings/__pycache__/utf_8.cpython-310.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=1603, ...}) = 0
+ioctl(3, TCGETS, 0x7fe8614170)          = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=1603, ...}) = 0
+read(3, "o\r\r\n\0\0\0\0:U\315b\355\3\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 1604) = 1603
+read(3, "", 1)                          = 0
+close(3)                                = 0
+rt_sigaction(SIGPIPE, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_ONSTACK}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGXFSZ, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_ONSTACK}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGHUP, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGINT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGQUIT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGILL, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGTRAP, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGABRT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGBUS, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGFPE, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGKILL, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGUSR1, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGSEGV, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGUSR2, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGPIPE, NULL, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_ONSTACK}, 8) = 0
+rt_sigaction(SIGALRM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGTERM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGSTKFLT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGCONT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGSTOP, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGTSTP, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGTTIN, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGTTOU, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGURG, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGXCPU, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGXFSZ, NULL, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_ONSTACK}, 8) = 0
+rt_sigaction(SIGVTALRM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGPROF, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGWINCH, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGIO, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGPWR, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGSYS, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_2, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_3, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_4, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_5, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_6, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_7, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_8, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_9, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_10, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_11, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_12, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_13, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_14, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_15, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_16, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_17, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_18, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_19, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_20, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_21, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_22, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_23, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_24, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_25, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_26, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_27, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_28, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_29, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_30, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_31, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_32, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGINT, {sa_handler=0x7f90a85534, sa_mask=[], sa_flags=SA_ONSTACK}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+fstat(0, {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/io.py", {st_mode=S_IFREG|0644, st_size=4196, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/io.py", {st_mode=S_IFREG|0644, st_size=4196, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/local/lib/python3.10/__pycache__/io.cpython-310.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=3669, ...}) = 0
+ioctl(3, TCGETS, 0x7fe86141b0)          = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=3669, ...}) = 0
+read(3, "o\r\r\n\0\0\0\0:U\315bd\20\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 3670) = 3669
+read(3, "", 1)                          = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/abc.py", {st_mode=S_IFREG|0644, st_size=6522, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/abc.py", {st_mode=S_IFREG|0644, st_size=6522, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/local/lib/python3.10/__pycache__/abc.cpython-310.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=6757, ...}) = 0
+ioctl(3, TCGETS, 0x7fe86133e0)          = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=6757, ...}) = 0
+read(3, "o\r\r\n\0\0\0\0:U\315bz\31\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 6758) = 6757
+read(3, "", 1)                          = 0
+close(3)                                = 0
+dup(0)                                  = 3
+close(3)                                = 0
+fstat(0, {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}) = 0
+ioctl(0, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+lseek(0, 0, SEEK_CUR)                   = -1 ESPIPE (Illegal seek)
+ioctl(0, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+dup(1)                                  = 3
+close(3)                                = 0
+fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}) = 0
+ioctl(1, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+lseek(1, 0, SEEK_CUR)                   = -1 ESPIPE (Illegal seek)
+ioctl(1, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+dup(2)                                  = 3
+close(3)                                = 0
+fstat(2, {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}) = 0
+ioctl(2, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+lseek(2, 0, SEEK_CUR)                   = -1 ESPIPE (Illegal seek)
+ioctl(2, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/site.py", {st_mode=S_IFREG|0644, st_size=22587, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/site.py", {st_mode=S_IFREG|0644, st_size=22587, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/local/lib/python3.10/__pycache__/site.cpython-310.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=17386, ...}) = 0
+ioctl(3, TCGETS, 0x7fe86141b0)          = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=17386, ...}) = 0
+read(3, "o\r\r\n\0\0\0\0:U\315b;X\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 17387) = 17386
+read(3, "", 1)                          = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/os.py", {st_mode=S_IFREG|0644, st_size=39514, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/os.py", {st_mode=S_IFREG|0644, st_size=39514, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/local/lib/python3.10/__pycache__/os.cpython-310.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=31562, ...}) = 0
+ioctl(3, TCGETS, 0x7fe86133e0)          = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=31562, ...}) = 0
+brk(0x55c4240000)                       = 0x55c4240000
+read(3, "o\r\r\n\0\0\0\0:U\315bZ\232\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 31563) = 31562
+read(3, "", 1)                          = 0
+close(3)                                = 0
+mmap(NULL, 151552, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f9052f000
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/stat.py", {st_mode=S_IFREG|0644, st_size=5485, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/stat.py", {st_mode=S_IFREG|0644, st_size=5485, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/local/lib/python3.10/__pycache__/stat.cpython-310.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=4279, ...}) = 0
+ioctl(3, TCGETS, 0x7fe8612610)          = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=4279, ...}) = 0
+read(3, "o\r\r\n\0\0\0\0:U\315bm\25\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 4280) = 4279
+read(3, "", 1)                          = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/_collections_abc.py", {st_mode=S_IFREG|0644, st_size=32045, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/_collections_abc.py", {st_mode=S_IFREG|0644, st_size=32045, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/local/lib/python3.10/__pycache__/_collections_abc.cpython-310.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=32843, ...}) = 0
+ioctl(3, TCGETS, 0x7fe8612610)          = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=32843, ...}) = 0
+read(3, "o\r\r\n\0\0\0\0:U\315b-}\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 32844) = 32843
+read(3, "", 1)                          = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/posixpath.py", {st_mode=S_IFREG|0644, st_size=16222, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/posixpath.py", {st_mode=S_IFREG|0644, st_size=16222, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/local/lib/python3.10/__pycache__/posixpath.cpython-310.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=10521, ...}) = 0
+ioctl(3, TCGETS, 0x7fe8612610)          = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=10521, ...}) = 0
+read(3, "o\r\r\n\0\0\0\0:U\315b^?\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 10522) = 10521
+read(3, "", 1)                          = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/genericpath.py", {st_mode=S_IFREG|0644, st_size=4975, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/genericpath.py", {st_mode=S_IFREG|0644, st_size=4975, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/local/lib/python3.10/__pycache__/genericpath.cpython-310.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=3913, ...}) = 0
+ioctl(3, TCGETS, 0x7fe8611840)          = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=3913, ...}) = 0
+read(3, "o\r\r\n\0\0\0\0:U\315bo\23\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 3914) = 3913
+read(3, "", 1)                          = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/_sitebuiltins.py", {st_mode=S_IFREG|0644, st_size=3128, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/_sitebuiltins.py", {st_mode=S_IFREG|0644, st_size=3128, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/local/lib/python3.10/__pycache__/_sitebuiltins.cpython-310.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=3553, ...}) = 0
+ioctl(3, TCGETS, 0x7fe86133e0)          = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=3553, ...}) = 0
+read(3, "o\r\r\n\0\0\0\0:U\315b8\f\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 3554) = 3553
+read(3, "", 1)                          = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/usr/local/bin/pyvenv.cfg", 0x7fe8613e00, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/pyvenv.cfg", 0x7fe8613e00, 0) = -1 ENOENT (No such file or directory)
+geteuid()                               = 0
+getuid()                                = 0
+getegid()                               = 0
+getgid()                                = 0
+newfstatat(AT_FDCWD, "/root/.local/lib/python3.10/site-packages", 0x7fe8613fb0, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/site-packages", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/local/lib/python3.10/site-packages", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+getdents64(3, 0x55c4221580 /* 51 entries */, 32768) = 1944
+getdents64(3, 0x55c4221580 /* 0 entries */, 32768) = 0
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/local/lib/python3.10/site-packages/distutils-precedence.pth", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=152, ...}) = 0
+ioctl(3, TCGETS, 0x7fe86139f0)          = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+ioctl(3, TCGETS, 0x7fe8613dc0)          = -1 ENOTTY (Inappropriate ioctl for device)
+read(3, "import os; var = 'SETUPTOOLS_USE"..., 8192) = 152
+read(3, "", 8192)                       = 0
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/local/lib/python3.10/site-packages/matplotlib-3.5.2-py3.10-nspkg.pth", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=569, ...}) = 0
+ioctl(3, TCGETS, 0x7fe86139f0)          = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+ioctl(3, TCGETS, 0x7fe8613dc0)          = -1 ENOTTY (Inappropriate ioctl for device)
+read(3, "import sys, types, os;has_mfs = "..., 8192) = 569
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/types.py", {st_mode=S_IFREG|0644, st_size=10117, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/types.py", {st_mode=S_IFREG|0644, st_size=10117, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/local/lib/python3.10/__pycache__/types.cpython-310.pyc", O_RDONLY|O_CLOEXEC) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=9539, ...}) = 0
+ioctl(4, TCGETS, 0x7fe86129b0)          = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(4, 0, SEEK_CUR)                   = 0
+lseek(4, 0, SEEK_CUR)                   = 0
+fstat(4, {st_mode=S_IFREG|0644, st_size=9539, ...}) = 0
+read(4, "o\r\r\n\0\0\0\0:U\315b\205'\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 9540) = 9539
+read(4, "", 1)                          = 0
+close(4)                                = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/importlib/__init__.cpython-310-aarch64-linux-gnu.so", 0x7fe8611e40, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/importlib/__init__.abi3.so", 0x7fe8611e40, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/importlib/__init__.so", 0x7fe8611e40, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/importlib/__init__.py", {st_mode=S_IFREG|0644, st_size=6089, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/importlib/__init__.py", {st_mode=S_IFREG|0644, st_size=6089, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/local/lib/python3.10/importlib/__pycache__/__init__.cpython-310.pyc", O_RDONLY|O_CLOEXEC) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=3811, ...}) = 0
+ioctl(4, TCGETS, 0x7fe8612020)          = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(4, 0, SEEK_CUR)                   = 0
+lseek(4, 0, SEEK_CUR)                   = 0
+fstat(4, {st_mode=S_IFREG|0644, st_size=3811, ...}) = 0
+read(4, "o\r\r\n\0\0\0\0;U\315b\311\27\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 3812) = 3811
+read(4, "", 1)                          = 0
+close(4)                                = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/warnings.py", {st_mode=S_IFREG|0644, st_size=19688, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/warnings.py", {st_mode=S_IFREG|0644, st_size=19688, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/local/lib/python3.10/__pycache__/warnings.cpython-310.pyc", O_RDONLY|O_CLOEXEC) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=13664, ...}) = 0
+ioctl(4, TCGETS, 0x7fe8611250)          = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(4, 0, SEEK_CUR)                   = 0
+lseek(4, 0, SEEK_CUR)                   = 0
+fstat(4, {st_mode=S_IFREG|0644, st_size=13664, ...}) = 0
+read(4, "o\r\r\n\0\0\0\0:U\315b\350L\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 13665) = 13664
+read(4, "", 1)                          = 0
+close(4)                                = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/importlib", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/importlib", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/importlib", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/local/lib/python3.10/importlib", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+getdents64(4, 0x55c422bed0 /* 15 entries */, 32768) = 488
+getdents64(4, 0x55c422bed0 /* 0 entries */, 32768) = 0
+close(4)                                = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/importlib/util.py", {st_mode=S_IFREG|0644, st_size=11487, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/importlib/util.py", {st_mode=S_IFREG|0644, st_size=11487, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/local/lib/python3.10/importlib/__pycache__/util.cpython-310.pyc", O_RDONLY|O_CLOEXEC) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=9335, ...}) = 0
+ioctl(4, TCGETS, 0x7fe86128d0)          = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(4, 0, SEEK_CUR)                   = 0
+lseek(4, 0, SEEK_CUR)                   = 0
+fstat(4, {st_mode=S_IFREG|0644, st_size=9335, ...}) = 0
+read(4, "o\r\r\n\0\0\0\0;U\315b\337,\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 9336) = 9335
+read(4, "", 1)                          = 0
+close(4)                                = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/importlib", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/importlib/_abc.py", {st_mode=S_IFREG|0644, st_size=1852, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/importlib/_abc.py", {st_mode=S_IFREG|0644, st_size=1852, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/local/lib/python3.10/importlib/__pycache__/_abc.cpython-310.pyc", O_RDONLY|O_CLOEXEC) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=1977, ...}) = 0
+ioctl(4, TCGETS, 0x7fe8611b00)          = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(4, 0, SEEK_CUR)                   = 0
+lseek(4, 0, SEEK_CUR)                   = 0
+fstat(4, {st_mode=S_IFREG|0644, st_size=1977, ...}) = 0
+read(4, "o\r\r\n\0\0\0\0;U\315b<\7\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 1978) = 1977
+read(4, "", 1)                          = 0
+close(4)                                = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/contextlib.py", {st_mode=S_IFREG|0644, st_size=25882, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/contextlib.py", {st_mode=S_IFREG|0644, st_size=25882, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/local/lib/python3.10/__pycache__/contextlib.cpython-310.pyc", O_RDONLY|O_CLOEXEC) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=20905, ...}) = 0
+ioctl(4, TCGETS, 0x7fe8611b00)          = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(4, 0, SEEK_CUR)                   = 0
+lseek(4, 0, SEEK_CUR)                   = 0
+fstat(4, {st_mode=S_IFREG|0644, st_size=20905, ...}) = 0
+read(4, "o\r\r\n\0\0\0\0:U\315b\32e\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 20906) = 20905
+read(4, "", 1)                          = 0
+close(4)                                = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/collections/__init__.cpython-310-aarch64-linux-gnu.so", 0x7fe8610b50, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/collections/__init__.abi3.so", 0x7fe8610b50, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/collections/__init__.so", 0x7fe8610b50, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/collections/__init__.py", {st_mode=S_IFREG|0644, st_size=51398, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/collections/__init__.py", {st_mode=S_IFREG|0644, st_size=51398, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/local/lib/python3.10/collections/__pycache__/__init__.cpython-310.pyc", O_RDONLY|O_CLOEXEC) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=48461, ...}) = 0
+ioctl(4, TCGETS, 0x7fe8610d30)          = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(4, 0, SEEK_CUR)                   = 0
+lseek(4, 0, SEEK_CUR)                   = 0
+fstat(4, {st_mode=S_IFREG|0644, st_size=48461, ...}) = 0
+read(4, "o\r\r\n\0\0\0\0:U\315b\306\310\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 48462) = 48461
+read(4, "", 1)                          = 0
+close(4)                                = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/keyword.py", {st_mode=S_IFREG|0644, st_size=1061, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/keyword.py", {st_mode=S_IFREG|0644, st_size=1061, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/local/lib/python3.10/__pycache__/keyword.cpython-310.pyc", O_RDONLY|O_CLOEXEC) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=933, ...}) = 0
+ioctl(4, TCGETS, 0x7fe860ff60)          = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(4, 0, SEEK_CUR)                   = 0
+lseek(4, 0, SEEK_CUR)                   = 0
+fstat(4, {st_mode=S_IFREG|0644, st_size=933, ...}) = 0
+read(4, "o\r\r\n\0\0\0\0:U\315b%\4\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 934) = 933
+read(4, "", 1)                          = 0
+close(4)                                = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/operator.py", {st_mode=S_IFREG|0644, st_size=10751, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/operator.py", {st_mode=S_IFREG|0644, st_size=10751, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/local/lib/python3.10/__pycache__/operator.cpython-310.pyc", O_RDONLY|O_CLOEXEC) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=13514, ...}) = 0
+ioctl(4, TCGETS, 0x7fe860ff60)          = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(4, 0, SEEK_CUR)                   = 0
+lseek(4, 0, SEEK_CUR)                   = 0
+fstat(4, {st_mode=S_IFREG|0644, st_size=13514, ...}) = 0
+read(4, "o\r\r\n\0\0\0\0:U\315b\377)\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 13515) = 13514
+read(4, "", 1)                          = 0
+close(4)                                = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/reprlib.py", {st_mode=S_IFREG|0644, st_size=5267, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/reprlib.py", {st_mode=S_IFREG|0644, st_size=5267, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/local/lib/python3.10/__pycache__/reprlib.cpython-310.pyc", O_RDONLY|O_CLOEXEC) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=5256, ...}) = 0
+ioctl(4, TCGETS, 0x7fe860ff60)          = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(4, 0, SEEK_CUR)                   = 0
+lseek(4, 0, SEEK_CUR)                   = 0
+fstat(4, {st_mode=S_IFREG|0644, st_size=5256, ...}) = 0
+read(4, "o\r\r\n\0\0\0\0:U\315b\223\24\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 5257) = 5256
+read(4, "", 1)                          = 0
+close(4)                                = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/functools.py", {st_mode=S_IFREG|0644, st_size=38076, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/functools.py", {st_mode=S_IFREG|0644, st_size=38076, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/local/lib/python3.10/__pycache__/functools.cpython-310.pyc", O_RDONLY|O_CLOEXEC) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=28355, ...}) = 0
+ioctl(4, TCGETS, 0x7fe8610d30)          = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(4, 0, SEEK_CUR)                   = 0
+lseek(4, 0, SEEK_CUR)                   = 0
+fstat(4, {st_mode=S_IFREG|0644, st_size=28355, ...}) = 0
+brk(0x55c4265000)                       = 0x55c4265000
+read(4, "o\r\r\n\0\0\0\0:U\315b\274\224\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 28356) = 28355
+read(4, "", 1)                          = 0
+close(4)                                = 0
+brk(0x55c425d000)                       = 0x55c425d000
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/importlib", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/importlib/machinery.py", {st_mode=S_IFREG|0644, st_size=831, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/importlib/machinery.py", {st_mode=S_IFREG|0644, st_size=831, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/local/lib/python3.10/importlib/__pycache__/machinery.cpython-310.pyc", O_RDONLY|O_CLOEXEC) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=950, ...}) = 0
+ioctl(4, TCGETS, 0x7fe86128d0)          = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(4, 0, SEEK_CUR)                   = 0
+lseek(4, 0, SEEK_CUR)                   = 0
+fstat(4, {st_mode=S_IFREG|0644, st_size=950, ...}) = 0
+read(4, "o\r\r\n\0\0\0\0;U\315b?\3\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 951) = 950
+read(4, "", 1)                          = 0
+close(4)                                = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/site-packages", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/site-packages", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/site-packages", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/local/lib/python3.10/site-packages", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+getdents64(4, 0x55c4246880 /* 51 entries */, 32768) = 1944
+getdents64(4, 0x55c4246880 /* 0 entries */, 32768) = 0
+close(4)                                = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/site-packages/mpl_toolkits/__init__.cpython-310-aarch64-linux-gnu.so", 0x7fe8612f90, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/site-packages/mpl_toolkits/__init__.abi3.so", 0x7fe8612f90, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/site-packages/mpl_toolkits/__init__.so", 0x7fe8612f90, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/site-packages/mpl_toolkits/__init__.py", 0x7fe8612f90, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/site-packages/mpl_toolkits/__init__.pyc", 0x7fe8612f90, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/site-packages/mpl_toolkits", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+read(3, "", 8192)                       = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/lib-dynload", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/lib-dynload", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/lib-dynload", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/local/lib/python3.10/lib-dynload", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+getdents64(3, 0x55c4221580 /* 78 entries */, 32768) = 5000
+getdents64(3, 0x55c4221580 /* 0 entries */, 32768) = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/site-packages", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/lib-dynload", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/site-packages", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "//pihattest.py", {st_mode=S_IFREG|0664, st_size=3041, ...}, 0) = 0
+openat(AT_FDCWD, "//pihattest.py", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0664, st_size=3041, ...}) = 0
+ioctl(3, TCGETS, 0x7fe8614fe0)          = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, -22, SEEK_END)                 = 3019
+lseek(3, 0, SEEK_CUR)                   = 3019
+read(3, "\"__main__\":\n    main()", 4096) = 22
+lseek(3, 0, SEEK_END)                   = 3041
+lseek(3, 0, SEEK_CUR)                   = 3041
+lseek(3, 0, SEEK_SET)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0664, st_size=3041, ...}) = 0
+read(3, "#%pip install RPI.GPIO\n\nimport R"..., 3042) = 3041
+read(3, "", 1)                          = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "//pihattest.py", {st_mode=S_IFREG|0664, st_size=3041, ...}, 0) = 0
+readlinkat(AT_FDCWD, "pihattest.py", 0x7fe8604a70, 4096) = -1 EINVAL (Invalid argument)
+getcwd("/", 4096)                       = 2
+newfstatat(AT_FDCWD, "/pihattest.py", {st_mode=S_IFREG|0664, st_size=3041, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "//pihattest.py", O_RDONLY) = 3
+ioctl(3, FIOCLEX)                       = 0
+fstat(3, {st_mode=S_IFREG|0664, st_size=3041, ...}) = 0
+ioctl(3, TCGETS, 0x7fe86159c0)          = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0664, st_size=3041, ...}) = 0
+read(3, "#%pip install RPI.GPIO\n\nimport R"..., 4096) = 3041
+lseek(3, 0, SEEK_SET)                   = 0
+read(3, "#%pip install RPI.GPIO\n\nimport R"..., 4096) = 3041
+mmap(NULL, 1048576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f9042f000
+brk(0x55c427f000)                       = 0x55c427f000
+read(3, "", 4096)                       = 0
+brk(0x55c42a1000)                       = 0x55c42a1000
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+openat(AT_FDCWD, "/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+getdents64(3, 0x55c4280cb0 /* 28 entries */, 32768) = 792
+getdents64(3, 0x55c4280cb0 /* 0 entries */, 32768) = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/lib-dynload", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/site-packages", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/site-packages/RPi/__init__.cpython-310-aarch64-linux-gnu.so", 0x7fe8613a30, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/site-packages/RPi/__init__.abi3.so", 0x7fe8613a30, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/site-packages/RPi/__init__.so", 0x7fe8613a30, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/site-packages/RPi/__init__.py", {st_mode=S_IFREG|0644, st_size=0, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/site-packages/RPi/__init__.py", {st_mode=S_IFREG|0644, st_size=0, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/local/lib/python3.10/site-packages/RPi/__pycache__/__init__.cpython-310.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=148, ...}) = 0
+ioctl(3, TCGETS, 0x7fe8613c10)          = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=148, ...}) = 0
+read(3, "o\r\r\n\0\0\0\0j\235\341b\0\0\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 149) = 148
+read(3, "", 1)                          = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/site-packages/RPi", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/site-packages/RPi", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/site-packages/RPi", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/local/lib/python3.10/site-packages/RPi", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+getdents64(3, 0x55c4280cb0 /* 6 entries */, 32768) = 200
+getdents64(3, 0x55c4280cb0 /* 0 entries */, 32768) = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/site-packages/RPi/GPIO/__init__.cpython-310-aarch64-linux-gnu.so", 0x7fe86142e0, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/site-packages/RPi/GPIO/__init__.abi3.so", 0x7fe86142e0, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/site-packages/RPi/GPIO/__init__.so", 0x7fe86142e0, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/site-packages/RPi/GPIO/__init__.py", {st_mode=S_IFREG|0644, st_size=1222, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/site-packages/RPi/GPIO/__init__.py", {st_mode=S_IFREG|0644, st_size=1222, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/local/lib/python3.10/site-packages/RPi/GPIO/__pycache__/__init__.cpython-310.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=293, ...}) = 0
+ioctl(3, TCGETS, 0x7fe86144c0)          = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=293, ...}) = 0
+read(3, "o\r\r\n\0\0\0\0j\235\341b\306\4\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 294) = 293
+read(3, "", 1)                          = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/site-packages/RPi", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/site-packages/RPi/_GPIO.cpython-310-aarch64-linux-gnu.so", {st_mode=S_IFREG|0755, st_size=171472, ...}, 0) = 0
+futex(0x7f9087b0e8, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+openat(AT_FDCWD, "/usr/local/lib/python3.10/site-packages/RPi/_GPIO.cpython-310-aarch64-linux-gnu.so", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\3008\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=171472, ...}) = 0
+mmap(NULL, 118576, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f90412000
+mprotect(0x7f9041e000, 61440, PROT_NONE) = 0
+mmap(0x7f9042d000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xb000) = 0x7f9042d000
+close(3)                                = 0
+mprotect(0x7f9042d000, 4096, PROT_READ) = 0
+openat(AT_FDCWD, "/proc/device-tree/system/linux,revision", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/proc/cpuinfo", O_RDONLY) = 3
+fstat(3, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+read(3, "processor\t: 0\nBogoMIPS\t: 108.00\n"..., 1024) = 776
+read(3, "", 1024)                       = 0
+close(3)                                = 0
+write(1, "PI Hat Tests\n", 13PI Hat Tests
+)          = 13
+write(1, "LEDS\n", 5LEDS
+)                   = 5
+write(1, "{'boot_RPi': 4, 'shutdown_RPi': "..., 72{'boot_RPi': 4, 'shutdown_RPi': 3, 'autonomous': 27, 'collect_data': 2}
+) = 72
+write(1, "switches and buttons\n", 21switches and buttons
+)  = 21
+write(1, "{'thr_step': 9, 'autonomous': 6,"..., 53{'thr_step': 9, 'autonomous': 6, 'collect_data': 11}
+) = 53
+openat(AT_FDCWD, "/dev/gpiomem", O_RDWR|O_SYNC) = 3
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_SHARED, 3, 0) = 0x7f90deb000
+newfstatat(AT_FDCWD, "/", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/linecache.py", {st_mode=S_IFREG|0644, st_size=5655, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/linecache.py", {st_mode=S_IFREG|0644, st_size=5655, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/local/lib/python3.10/__pycache__/linecache.cpython-310.pyc", O_RDONLY|O_CLOEXEC) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=4109, ...}) = 0
+ioctl(4, TCGETS, 0x7fe8613900)          = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(4, 0, SEEK_CUR)                   = 0
+lseek(4, 0, SEEK_CUR)                   = 0
+fstat(4, {st_mode=S_IFREG|0644, st_size=4109, ...}) = 0
+read(4, "o\r\r\n\0\0\0\0:U\315b\27\26\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 4110) = 4109
+read(4, "", 1)                          = 0
+close(4)                                = 0
+newfstatat(AT_FDCWD, "/", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/tokenize.py", {st_mode=S_IFREG|0644, st_size=25921, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/tokenize.py", {st_mode=S_IFREG|0644, st_size=25921, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/local/lib/python3.10/__pycache__/tokenize.cpython-310.pyc", O_RDONLY|O_CLOEXEC) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=17214, ...}) = 0
+ioctl(4, TCGETS, 0x7fe8612b30)          = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(4, 0, SEEK_CUR)                   = 0
+lseek(4, 0, SEEK_CUR)                   = 0
+fstat(4, {st_mode=S_IFREG|0644, st_size=17214, ...}) = 0
+read(4, "o\r\r\n\0\0\0\0:U\315bAe\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 17215) = 17214
+read(4, "", 1)                          = 0
+close(4)                                = 0
+newfstatat(AT_FDCWD, "/", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/re.py", {st_mode=S_IFREG|0644, st_size=15860, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/re.py", {st_mode=S_IFREG|0644, st_size=15860, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/local/lib/python3.10/__pycache__/re.cpython-310.pyc", O_RDONLY|O_CLOEXEC) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=14233, ...}) = 0
+ioctl(4, TCGETS, 0x7fe8611d60)          = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(4, 0, SEEK_CUR)                   = 0
+lseek(4, 0, SEEK_CUR)                   = 0
+fstat(4, {st_mode=S_IFREG|0644, st_size=14233, ...}) = 0
+read(4, "o\r\r\n\0\0\0\0:U\315b\364=\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 14234) = 14233
+read(4, "", 1)                          = 0
+close(4)                                = 0
+newfstatat(AT_FDCWD, "/", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/enum.py", {st_mode=S_IFREG|0644, st_size=39831, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/enum.py", {st_mode=S_IFREG|0644, st_size=39831, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/local/lib/python3.10/__pycache__/enum.cpython-310.pyc", O_RDONLY|O_CLOEXEC) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=26087, ...}) = 0
+ioctl(4, TCGETS, 0x7fe8610f90)          = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(4, 0, SEEK_CUR)                   = 0
+lseek(4, 0, SEEK_CUR)                   = 0
+fstat(4, {st_mode=S_IFREG|0644, st_size=26087, ...}) = 0
+read(4, "o\r\r\n\0\0\0\0:U\315b\227\233\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 26088) = 26087
+read(4, "", 1)                          = 0
+close(4)                                = 0
+newfstatat(AT_FDCWD, "/", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/sre_compile.py", {st_mode=S_IFREG|0644, st_size=27973, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/sre_compile.py", {st_mode=S_IFREG|0644, st_size=27973, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/local/lib/python3.10/__pycache__/sre_compile.cpython-310.pyc", O_RDONLY|O_CLOEXEC) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=15200, ...}) = 0
+ioctl(4, TCGETS, 0x7fe8610f90)          = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(4, 0, SEEK_CUR)                   = 0
+lseek(4, 0, SEEK_CUR)                   = 0
+fstat(4, {st_mode=S_IFREG|0644, st_size=15200, ...}) = 0
+read(4, "o\r\r\n\0\0\0\0:U\315bEm\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 15201) = 15200
+read(4, "", 1)                          = 0
+close(4)                                = 0
+newfstatat(AT_FDCWD, "/", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/sre_parse.py", {st_mode=S_IFREG|0644, st_size=40779, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/sre_parse.py", {st_mode=S_IFREG|0644, st_size=40779, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/local/lib/python3.10/__pycache__/sre_parse.cpython-310.pyc", O_RDONLY|O_CLOEXEC) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=21765, ...}) = 0
+ioctl(4, TCGETS, 0x7fe86101c0)          = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(4, 0, SEEK_CUR)                   = 0
+lseek(4, 0, SEEK_CUR)                   = 0
+fstat(4, {st_mode=S_IFREG|0644, st_size=21765, ...}) = 0
+read(4, "o\r\r\n\0\0\0\0:U\315bK\237\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 21766) = 21765
+read(4, "", 1)                          = 0
+close(4)                                = 0
+newfstatat(AT_FDCWD, "/", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/sre_constants.py", {st_mode=S_IFREG|0644, st_size=7177, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/sre_constants.py", {st_mode=S_IFREG|0644, st_size=7177, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/local/lib/python3.10/__pycache__/sre_constants.cpython-310.pyc", O_RDONLY|O_CLOEXEC) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=6363, ...}) = 0
+ioctl(4, TCGETS, 0x7fe860f3f0)          = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(4, 0, SEEK_CUR)                   = 0
+lseek(4, 0, SEEK_CUR)                   = 0
+fstat(4, {st_mode=S_IFREG|0644, st_size=6363, ...}) = 0
+read(4, "o\r\r\n\0\0\0\0:U\315b\t\34\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 6364) = 6363
+read(4, "", 1)                          = 0
+close(4)                                = 0
+newfstatat(AT_FDCWD, "/", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/copyreg.py", {st_mode=S_IFREG|0644, st_size=7426, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/copyreg.py", {st_mode=S_IFREG|0644, st_size=7426, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/local/lib/python3.10/__pycache__/copyreg.cpython-310.pyc", O_RDONLY|O_CLOEXEC) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=4693, ...}) = 0
+ioctl(4, TCGETS, 0x7fe8610f90)          = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(4, 0, SEEK_CUR)                   = 0
+lseek(4, 0, SEEK_CUR)                   = 0
+fstat(4, {st_mode=S_IFREG|0644, st_size=4693, ...}) = 0
+read(4, "o\r\r\n\0\0\0\0:U\315b\2\35\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 4694) = 4693
+read(4, "", 1)                          = 0
+close(4)                                = 0
+newfstatat(AT_FDCWD, "/", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/token.py", {st_mode=S_IFREG|0644, st_size=2386, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/local/lib/python3.10/token.py", {st_mode=S_IFREG|0644, st_size=2386, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/local/lib/python3.10/__pycache__/token.cpython-310.pyc", O_RDONLY|O_CLOEXEC) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=2744, ...}) = 0
+ioctl(4, TCGETS, 0x7fe8611d60)          = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(4, 0, SEEK_CUR)                   = 0
+lseek(4, 0, SEEK_CUR)                   = 0
+fstat(4, {st_mode=S_IFREG|0644, st_size=2744, ...}) = 0
+read(4, "o\r\r\n\0\0\0\0:U\315bR\t\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 2745) = 2744
+read(4, "", 1)                          = 0
+close(4)                                = 0
+newfstatat(AT_FDCWD, "//pihattest.py", {st_mode=S_IFREG|0664, st_size=3041, ...}, 0) = 0
+openat(AT_FDCWD, "//pihattest.py", O_RDONLY|O_CLOEXEC) = 4
+fstat(4, {st_mode=S_IFREG|0664, st_size=3041, ...}) = 0
+ioctl(4, TCGETS, 0x7fe86141d0)          = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(4, 0, SEEK_CUR)                   = 0
+read(4, "#%pip install RPI.GPIO\n\nimport R"..., 4096) = 3041
+read(4, "", 8192)                       = 0
+read(4, "", 8192)                       = 0
+close(4)                                = 0
+write(2, "//pihattest.py:75: RuntimeWarnin"..., 164//pihattest.py:75: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+  GPIO.setup(led, GPIO.OUT)
+) = 164
+write(1, "Turn on Power Status LED\n", 25Turn on Power Status LED
+) = 25
+pselect6(0, NULL, NULL, NULL, {tv_sec=0, tv_nsec=500000000}, NULL) = 0 (Timeout)
+pselect6(0, NULL, NULL, NULL, {tv_sec=0, tv_nsec=500000000}, NULL) = 0 (Timeout)
+pselect6(0, NULL, NULL, NULL, {tv_sec=0, tv_nsec=500000000}, NULL) = 0 (Timeout)
+pselect6(0, NULL, NULL, NULL, {tv_sec=0, tv_nsec=500000000}, NULL) = 0 (Timeout)
+pselect6(0, NULL, NULL, NULL, {tv_sec=0, tv_nsec=500000000}, NULL) = 0 (Timeout)
+pselect6(0, NULL, NULL, NULL, {tv_sec=0, tv_nsec=500000000}, NULL) = 0 (Timeout)
+pselect6(0, NULL, NULL, NULL, {tv_sec=0, tv_nsec=500000000}, NULL) = 0 (Timeout)
+pselect6(0, NULL, NULL, NULL, {tv_sec=0, tv_nsec=500000000}, NULL) = 0 (Timeout)
+pselect6(0, NULL, NULL, NULL, {tv_sec=0, tv_nsec=500000000}, NULL) = 0 (Timeout)
+pselect6(0, NULL, NULL, NULL, {tv_sec=0, tv_nsec=500000000}, NULL) = 0 (Timeout)
+write(1, "Collect LED\n", 12Collect LED
+)           = 12
+pselect6(0, NULL, NULL, NULL, {tv_sec=0, tv_nsec=500000000}, NULL) = 0 (Timeout)
+pselect6(0, NULL, NULL, NULL, {tv_sec=0, tv_nsec=500000000}, NULL) = 0 (Timeout)
+pselect6(0, NULL, NULL, NULL, {tv_sec=0, tv_nsec=500000000}, NULL) = 0 (Timeout)
+pselect6(0, NULL, NULL, NULL, {tv_sec=0, tv_nsec=500000000}, NULL) = 0 (Timeout)
+pselect6(0, NULL, NULL, NULL, {tv_sec=0, tv_nsec=500000000}, NULL) = 0 (Timeout)
+pselect6(0, NULL, NULL, NULL, {tv_sec=0, tv_nsec=500000000}, NULL) = 0 (Timeout)
+pselect6(0, NULL, NULL, NULL, {tv_sec=0, tv_nsec=500000000}, NULL) = 0 (Timeout)
+pselect6(0, NULL, NULL, NULL, {tv_sec=0, tv_nsec=500000000}, NULL) = 0 (Timeout)
+pselect6(0, NULL, NULL, NULL, {tv_sec=0, tv_nsec=500000000}, NULL) = 0 (Timeout)
+pselect6(0, NULL, NULL, NULL, {tv_sec=0, tv_nsec=500000000}, NULL) = 0 (Timeout)
+write(1, "Auto Mode\n", 10Auto Mode
+)             = 10
+pselect6(0, NULL, NULL, NULL, {tv_sec=0, tv_nsec=500000000}, NULL) = 0 (Timeout)
+pselect6(0, NULL, NULL, NULL, {tv_sec=0, tv_nsec=500000000}, NULL) = 0 (Timeout)
+pselect6(0, NULL, NULL, NULL, {tv_sec=0, tv_nsec=500000000}, NULL) = 0 (Timeout)
+pselect6(0, NULL, NULL, NULL, {tv_sec=0, tv_nsec=500000000}, NULL) = 0 (Timeout)
+pselect6(0, NULL, NULL, NULL, {tv_sec=0, tv_nsec=500000000}, NULL) = 0 (Timeout)
+pselect6(0, NULL, NULL, NULL, {tv_sec=0, tv_nsec=500000000}, NULL) = 0 (Timeout)
+pselect6(0, NULL, NULL, NULL, {tv_sec=0, tv_nsec=500000000}, NULL) = 0 (Timeout)
+pselect6(0, NULL, NULL, NULL, {tv_sec=0, tv_nsec=500000000}, NULL) = 0 (Timeout)
+pselect6(0, NULL, NULL, NULL, {tv_sec=0, tv_nsec=500000000}, NULL) = 0 (Timeout)
+pselect6(0, NULL, NULL, NULL, {tv_sec=0, tv_nsec=500000000}, NULL) = 0 (Timeout)
+faccessat(AT_FDCWD, "/sys/class/gpio/gpio9", F_OK) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/sys/class/gpio/export", O_WRONLY) = 4
+write(4, "9", 1)                        = 1
+close(4)                                = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+openat(AT_FDCWD, "/sys/class/gpio/gpio9/direction", O_WRONLY) = -1 EROFS (Read-only file system)
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=10000000}, NULL) = 0
+write(2, "Traceback (most recent call last"..., 35Traceback (most recent call last):
+) = 35
+write(2, "  File \"//pihattest.py\", line 12"..., 47  File "//pihattest.py", line 125, in <module>
+) = 47
+openat(AT_FDCWD, "//pihattest.py", O_RDONLY|O_CLOEXEC) = 4
+fstat(4, {st_mode=S_IFREG|0664, st_size=3041, ...}) = 0
+ioctl(4, TCGETS, 0x7fe86141f0)          = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(4, 0, SEEK_CUR)                   = 0
+fcntl(4, F_DUPFD_CLOEXEC, 0)            = 5
+fcntl(5, F_GETFL)                       = 0x20000 (flags O_RDONLY|O_LARGEFILE)
+fstat(5, {st_mode=S_IFREG|0664, st_size=3041, ...}) = 0
+read(5, "#%pip install RPI.GPIO\n\nimport R"..., 4096) = 3041
+close(5)                                = 0
+lseek(4, 0, SEEK_SET)                   = 0
+read(4, "#%pip install RPI.GPIO\n\nimport R"..., 8192) = 3041
+read(4, "", 8192)                       = 0
+close(4)                                = 0
+write(2, "    main()\n", 11    main()
+)            = 11
+write(2, "  File \"//pihattest.py\", line 10"..., 43  File "//pihattest.py", line 108, in main
+) = 43
+openat(AT_FDCWD, "//pihattest.py", O_RDONLY|O_CLOEXEC) = 4
+fstat(4, {st_mode=S_IFREG|0664, st_size=3041, ...}) = 0
+ioctl(4, TCGETS, 0x7fe86141f0)          = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(4, 0, SEEK_CUR)                   = 0
+fcntl(4, F_DUPFD_CLOEXEC, 0)            = 5
+fcntl(5, F_GETFL)                       = 0x20000 (flags O_RDONLY|O_LARGEFILE)
+fstat(5, {st_mode=S_IFREG|0664, st_size=3041, ...}) = 0
+read(5, "#%pip install RPI.GPIO\n\nimport R"..., 4096) = 3041
+close(5)                                = 0
+lseek(4, 0, SEEK_SET)                   = 0
+read(4, "#%pip install RPI.GPIO\n\nimport R"..., 8192) = 3041
+close(4)                                = 0
+write(2, "    GPIO.add_event_detect(switch"..., 116    GPIO.add_event_detect(switch_names["thr_step"], GPIO.FALLING, callback=callback_switch_thr_step, bouncetime=50)
+) = 116
+write(2, "RuntimeError: Failed to add edge"..., 43RuntimeError: Failed to add edge detection
+) = 43
+rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_ONSTACK}, {sa_handler=0x7f90a85534, sa_mask=[], sa_flags=SA_ONSTACK}, 8) = 0
+munmap(0x7f9052f000, 151552)            = 0
+munmap(0x7f90deb000, 4096)              = 0
+exit_group(1)                           = ?
++++ exited with 1 +++

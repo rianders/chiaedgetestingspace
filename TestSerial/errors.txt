@@ -1,0 +1,1 @@
+0/32 nodes are available: 1 Insufficient smarter-devices/ttyACM0, 23 node(s) didn't match Pod's node affinity/selector, 3 node(s) had taint {node.kubernetes.io/disk-pressure: }, that the pod didn't tolerate, 5 node(s) had taint {node.kubernetes.io/unreachable: }, that the pod didn't tolerate.

@@ -1,0 +1,24 @@
+FROM python:3.9.2 as tflow 
+RUN echo "installing notebook"
+RUN pip install notebook
+RUN echo "install done"
+RUN echo "installing tensorflow"
+RUN pip install tensorflow-aarch64 -f https://tf.kmtea.eu/whl/stable.html
+RUN echo "install done"
+
+FROM tflow As gpio 
+
+RUN echo "installing pandas, numpy, matplotlib, plotly, RPi.GPIO"
+RUN pip install pandas numpy matplotlib plotly RPi.GPIO
+RUN echo "install done"
+
+FROM gpio As serial 
+
+RUN echo "installing pyserial"
+RUN pip install pyserial
+RUN echo "install done"
+
+FROM serial As base 
+
+COPY . .
+CMD ["./nbook_cr_run.sh"]
