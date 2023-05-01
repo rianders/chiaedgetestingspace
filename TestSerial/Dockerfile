@@ -8,7 +8,15 @@ FROM python:3.9.16-slim-buster AS base
 FROM base AS serial
 
 RUN echo "installing pandas, numpy, matplotlib, plotly, RPi.GPIO, and pyserial"
-RUN pip install pandas numpy matplotlib plotly RPi.GPIO pyserial
+RUN pip install pandas 
+RUN pip install numpy 
+RUN pip install matplotlib
+RUN pip install 
+RUN pip install
+RUN pip install 
+RUN pip installplotly 
+RUN pip install RPi.GPIO 
+RUN pip install pyserial
 RUN echo "installation done"
 
 # RUN echo "installing requests"
