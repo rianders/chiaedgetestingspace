@@ -7,10 +7,6 @@ FROM python:3.9.16-slim-buster AS base
 
 FROM base AS serial
 
-#todo
-RUN apt-get update && apt-get install -y \
-    python3
-
 RUN echo "installing pandas, numpy, matplotlib, plotly, RPi.GPIO, and pyserial"
 RUN pip install pandas numpy matplotlib plotly RPi.GPIO pyserial
 RUN echo "installation done"
