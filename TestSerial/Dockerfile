@@ -3,7 +3,9 @@
 # Todo set up tensorflow for arm
 #FROM BASE as TENSORFLOW
 #get tensorflow set up for arm host platform (linux/arm64/v8)
-FROM balenalib/rpi-debian-python:3.9.13
+#FROM balenalib/rpi-debian-python:3.9.13
+FROM balenalib/raspberrypi4-64-debian-python:3.9.14
+
 # Upgrade pip to the latest version
 RUN pip install --upgrade pip
 
