@@ -4,7 +4,10 @@
 #FROM BASE as TENSORFLOW
 #get tensorflow set up for arm host platform (linux/arm64/v8)
 #FROM balenalib/rpi-debian-python:latest
-FROM --platform=linux/arm64/v8 kumatea/tensorflow:2.4.1-py39 AS base
+#FROM --platform=linux/arm64/v8 kumatea/tensorflow:2.4.1-py39 AS base
+
+FROM --platform=linux/arm64/v8 balenalib/rpi-debian-python:latest AS base
+
 
 # Upgrade pip to the latest version
 RUN pip install --upgrade pip
