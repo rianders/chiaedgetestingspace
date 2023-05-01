@@ -28,10 +28,9 @@ RUN pip install --upgrade pip
 FROM base AS serial
 
 # Install pyserial and platformio (specify versions for reproducibility)
-RUN echo "installing pyserial platformio" \
-    && pip install pyserial==<version> \
-    && pip install platformio==<version> \
-    && echo "installation done"
+RUN echo "installing pyserial platformio"
+RUN pip install pyserial platformio
+RUN echo "installation done"
 
 # Consider copying only what you need
 COPY . .
