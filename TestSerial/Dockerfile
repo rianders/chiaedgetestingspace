@@ -17,6 +17,7 @@ RUN pip install
 RUN pip installplotly 
 RUN pip install RPi.GPIO 
 RUN pip install pyserial
+RUN pip install platformio
 RUN echo "installation done"
 
 # RUN echo "installing requests"
