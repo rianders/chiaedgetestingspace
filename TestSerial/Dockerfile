@@ -1,18 +1,24 @@
 
-#FROM jupyter/minimal-notebook:aarch64-latest AS base
-# Todo set up tensorflow for arm
-#FROM BASE as TENSORFLOW
-#get tensorflow set up for arm host platform (linux/arm64/v8)
-#FROM balenalib/rpi-debian-python:latest
-#FROM --platform=linux/arm64/v8 kumatea/tensorflow:2.4.1-py39 AS base
+ARG BASE_IMAGE=kumatea/tensorflow:2.4.1-py39
 
-FROM --platform=linux/arm64/v8 balenalib/rpi-debian-python:latest AS base
+FROM --platform=linux/arm64/v8 ${BASE_IMAGE} as userland
 
-RUN apt-get update && apt-get install -y \
-    libatlas-base-dev \
-    gfortran \
-    libfreetype6-dev
+RUN apt-get update && apt-get install -f -y \
+    cmake \
+    build-essential \
+    git \
+    sudo
 
+RUN git clone \
+    https://github.com/msherman64/userland \
+    -b wip/64bit \
+    /usr/local/src/userland
+WORKDIR /usr/local/src/userland
+RUN ./buildme --aarch64
+
+
+
+FROM --platform=linux/arm64/v8 ${BASE_IMAGE} AS base
 
 # Upgrade pip to the latest version
 RUN pip install --upgrade pip
