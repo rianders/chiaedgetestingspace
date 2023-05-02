@@ -21,7 +21,7 @@ else
 fi
 echo  "$DEVICES"
 
-docker run $DEVICES ecy14mhfh/testserial:$hash_ts
+docker run $DEVICES rianders/testserial:$hash_ts
 
 #if ports devices = a string of properly formatted devices
 

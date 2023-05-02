@@ -29,8 +29,8 @@ FROM base AS serial
 
 # Install pyserial and platformio (specify versions for reproducibility)
 RUN echo "installing pyserial platformio" \
-    && pip install pyserial==<version> \
-    && pip install platformio==<version> \
+    && pip install pyserial \
+    && pip install platformio \
     && echo "installation done"
 
 # Consider copying only what you need
